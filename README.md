@@ -41,7 +41,7 @@ The installers contain the desktop interface and Python backend. **End users do 
 - **macOS:** open the DMG and drag ReconBot into Applications. Quit an older running version before replacing it; keep the application workspace to preserve history and settings.
 - **Linux:** install the DEB with your package manager or make the AppImage executable and launch it.
 
-macOS packages are unsigned and not notarized. Linux packages were tested in Debian 12 on x86_64 and ARM64 under Xvfb; physical desktop installation and other distributions remain unverified. Intel macOS and Windows packages are not provided in this beta. See [installation and prerequisites](docs/getting-started.md).
+macOS packages are unsigned and not notarized. Linux packages passed Debian 12 package tests on x86_64 and ARM64 under Xvfb. An Ubuntu ARM64 VM installation was also confirmed by the operator with responsive navigation. A Kali ARM64 VM has unresolved 30–45-second UI delays; other desktop/distribution combinations remain unverified. Intel macOS and Windows packages are not provided in this beta. See [installation and prerequisites](docs/getting-started.md).
 
 ## Start a scan
 
@@ -78,11 +78,11 @@ Before this beta was prepared:
 - Native macOS and Linux package checks covered application identity, the bundled backend, navigation, offline reports, graph interactions, SQL validation and authentication workflows.
 - Four local synthetic sites exercised discovery, selected Nuclei templates, SQL positive/negative cases and authentication controls.
 
-These are recorded local checks, not a guarantee of universal correctness. Live-model semantic acceptance remains failed; physical Linux installation and final operator usability checks remain open. See [test evidence and reproducible commands](docs/testing.md).
+These are recorded local checks, not a guarantee of universal correctness. Live-model semantic acceptance remains failed. Ubuntu ARM64 VM navigation was confirmed responsive by the operator; the Kali ARM64 VM UI delay remains unresolved. See [test evidence and reproducible commands](docs/testing.md).
 
-## Private beta acceptance
+## Beta acceptance
 
-For the initial private GitHub release and Kali VM checks, follow [the Kali test guide](docs/kali-private-test.md). A signed-in authorized account is required to download private release assets. Linux packages support x86_64 and ARM64; choose the package matching your architecture.
+For architecture selection and manual installation checks, see [the Kali test guide](docs/kali-private-test.md), originally prepared for the private acceptance phase. Release assets are now public. Linux packages support x86_64 and ARM64; choose the package matching your architecture. The Kali VM UI delay noted above is an open beta issue.
 
 ## Develop
 
