@@ -10,6 +10,8 @@ jobs:
             target: mac
           - os: ubuntu-22.04
             target: linux
+          - os: ubuntu-24.04-arm
+            target: linux
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
@@ -42,14 +44,19 @@ jobs:
         run: |
           if [ "${{ matrix.target }}" = "linux" ]; then
             sudo apt-get update -qq
-            sudo apt-get install -y xvfb libgbm1 libasound2
+            sudo apt-get install -y xvfb libgbm1
+            if [ "${{ matrix.os }}" = "ubuntu-24.04-arm" ]; then
+              sudo apt-get install -y libasound2t64
+            else
+              sudo apt-get install -y libasound2
+            fi
             RECONBOT_SMOKE_EXECUTABLE="$PWD/dist/linux-unpacked/reconbot" xvfb-run -a node scripts/package-smoke.cjs
           else
             RECONBOT_SMOKE_EXECUTABLE="$(find "$PWD/dist" -path '*/Contents/MacOS/ReconBot' -type f -print -quit)" node scripts/package-smoke.cjs
           fi
       - uses: actions/upload-artifact@v4
         with:
-          name: ReconBot-${{ matrix.target }}
+          name: ReconBot-${{ matrix.target }}-${{ matrix.os }}
           path: |
             desktop/dist/*.dmg
             desktop/dist/*.zip

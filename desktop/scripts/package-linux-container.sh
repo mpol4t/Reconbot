@@ -20,10 +20,13 @@ npm ci --no-audit
 RECONBOT_LICENSE_ROOT=/source RECONBOT_PYTHON=/tmp/backend-venv/bin/python RECONBOT_LICENSE_OUTPUT=/package/build/licenses node scripts/build-licenses.cjs
 # Reuse a cached official runtime only after checking its release checksum.
 electron_archive=$(/tmp/backend-venv/bin/python - <<'PY_CACHE'
-import hashlib, json
+import hashlib, json, subprocess
 from pathlib import Path
 version = json.loads(Path('node_modules/electron/package.json').read_text())['version']
-name = f'electron-v{version}-linux-x64.zip'
+arch = subprocess.check_output(['node', '-p', 'process.arch'], text=True).strip()
+if arch not in {'x64', 'arm64'}:
+    raise SystemExit('Unsupported Linux packaging architecture: ' + arch)
+name = f'electron-v{version}-linux-{arch}.zip'
 expected = json.loads(Path('node_modules/electron/checksums.json').read_text()).get(name)
 for archive in Path('/package/cache/electron').rglob(name):
     with archive.open('rb') as stream:

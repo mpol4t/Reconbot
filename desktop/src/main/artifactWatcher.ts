@@ -683,7 +683,7 @@ function runVersion(runDir: string, previous?: RunStateSnapshot): string {
     const extra = [asString(nuclei.output_path), asString(asRecord(tools.artifacts).output)]
       .filter(Boolean).map(value => path.resolve(value)).filter(value => isWithin(runDir, value));
     return [...new Set([...names.map(name => path.join(runDir, name)), ...extra])].map(file => {
-      try { const stat = fs.statSync(file); return `${file}:${stat.ino}:${stat.size}:${stat.mtimeMs}:${stat.ctimeMs}`; }
+      try { const stat = fs.statSync(file, { bigint: true }); return `${file}:${stat.ino}:${stat.size}:${stat.mtimeNs}:${stat.ctimeNs}`; }
       catch { return `${file}:missing`; }
     }).join("|");
   } catch { return "missing"; }

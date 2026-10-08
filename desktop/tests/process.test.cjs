@@ -181,7 +181,11 @@ test('AI and scanner interpreter resolver honors local environment and explicit 
   const old=process.env.RECONBOT_PYTHON;
   try {
     delete process.env.RECONBOT_PYTHON;
-    assert.equal(api.pythonExecutable(root),path.join(root,'.venv','bin','python'));
+    const repo=fs.mkdtempSync(path.join(scratch,'python-runtime-'));
+    assert.equal(api.pythonExecutable(repo),'python3');
+    const local=path.join(repo,'.venv',process.platform==='win32'?'Scripts':'bin',process.platform==='win32'?'python.exe':'python');
+    fs.mkdirSync(path.dirname(local),{recursive:true});fs.writeFileSync(local,'fixture');
+    assert.equal(api.pythonExecutable(repo),local);
     process.env.RECONBOT_PYTHON=' /fixture/python ';
     assert.equal(api.pythonExecutable(root),'/fixture/python');
   } finally {if(old===undefined)delete process.env.RECONBOT_PYTHON;else process.env.RECONBOT_PYTHON=old;}
@@ -209,6 +213,24 @@ test('snapshot cache skips parsing unchanged files and invalidates additions, re
   const historical=api.readRunStateSnapshot(runDir,true,true);
   assert.equal(historical.currentStage,'');assert.equal(historical.processAttached,false);
   assert.equal(historical.stages.find(row=>row.name==='nmap').status,'done');
+});
+test('snapshot versions retain nanoseconds for same-size writes within a millisecond',()=>{
+  const runDir=fs.mkdtempSync(path.join(scratch,'nanosecond-'));
+  const state=path.join(runDir,'run_result.json');
+  fs.writeFileSync(state,JSON.stringify({meta:{target:'a.example'}}));
+  const originalStat=fs.statSync;let revision=1n;
+  fs.statSync=function(file,options){
+    const stat=originalStat.call(this,file,options);
+    if(file!==state)return stat;
+    if(options?.bigint)return {...stat,mtimeNs:1000000n+revision,ctimeNs:1000000n+revision};
+    return {...stat,mtimeMs:1,ctimeMs:1};
+  };
+  try {
+    const first=api.readRunStateSnapshot(runDir,true,false);
+    assert.equal(api.readRunStateSnapshot(runDir,true,false),first);
+    fs.writeFileSync(state,JSON.stringify({meta:{target:'b.example'}}));revision=2n;
+    assert.equal(api.readRunStateSnapshot(runDir,true,false).target,'b.example');
+  }finally{fs.statSync=originalStat;}
 });
 test('nested Nuclei output changes invalidate cached findings',async()=>{
   const runDir=fs.mkdtempSync(path.join(scratch,'nested-'));
