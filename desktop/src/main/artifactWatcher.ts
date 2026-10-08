@@ -672,7 +672,7 @@ function buildRunStateSnapshot(currentRunDir: string, historical = false, proces
 
 // A bounded cache avoids re-parsing full historical reports/logs on the main thread.
 // Every top-level file version and any nested Nuclei output dependency is checked.
-const snapshotCache = new Map<string, { signature: string; value: RunStateSnapshot; bytes: number }>();
+const snapshotCache = new Map<string, { signature: string; value: RunStateSnapshot; bytes: number; checkedAt: number }>();
 let snapshotBytes = 0;
 let lastSnapshotTime = 0;
 function runVersion(runDir: string, previous?: RunStateSnapshot): string {
@@ -693,7 +693,10 @@ export function readRunStateSnapshot(currentRunDir: string, historical = false, 
   const key = `${currentRunDir}|${historical}|${processAttached}`;
   const cached = snapshotCache.get(key);
   const before = runVersion(currentRunDir, cached?.value);
-  if (cached?.signature === before) {
+  // Coarse filesystem clocks can give different same-size writes identical stat versions.
+  // A short lease bounds staleness even when timestamps are preserved.
+  const now = Date.now();
+  if (cached?.signature === before && now - cached.checkedAt >= 0 && now - cached.checkedAt < 1000) {
     snapshotCache.delete(key); snapshotCache.set(key, cached);
     return cached.value;
   }
@@ -706,7 +709,7 @@ export function readRunStateSnapshot(currentRunDir: string, historical = false, 
   if (before === after) {
     const bytes = Buffer.byteLength(JSON.stringify(value));
     if (bytes <= 32 * 1024 * 1024) {
-      snapshotCache.set(key, { signature: after, value, bytes });
+      snapshotCache.set(key, { signature: after, value, bytes, checkedAt: now });
       snapshotBytes += bytes;
       while (snapshotCache.size > 64 || snapshotBytes > 32 * 1024 * 1024) {
         const oldest = snapshotCache.keys().next().value as string;

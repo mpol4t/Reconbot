@@ -200,7 +200,9 @@ test('snapshot cache skips parsing unchanged files and invalidates additions, re
   fs.readFileSync=function(...args){reads++;return originalRead.apply(this,args)};
   try { assert.equal(api.readRunStateSnapshot(runDir,true,false),first);assert.equal(reads,0); }
   finally { fs.readFileSync=originalRead; }
+  const version=fs.statSync(state).mtimeMs;
   fs.writeFileSync(state,JSON.stringify({meta:{target:'b.example'},stages:{nmap:{status:'done'}}}));
+  fs.utimesSync(state,Date.now()/1000,(version+10)/1000);
   const second=api.readRunStateSnapshot(runDir,true,false);
   assert.equal(second.target,'b.example');assert.notEqual(second.updatedAt,first.updatedAt);
   fs.writeFileSync(path.join(runDir,'report.html'),'<html>report</html>');
@@ -232,13 +234,29 @@ test('snapshot versions retain nanoseconds for same-size writes within a millise
     assert.equal(api.readRunStateSnapshot(runDir,true,false).target,'b.example');
   }finally{fs.statSync=originalStat;}
 });
+test('cache lease refreshes same-size content when filesystem versions collide',()=>{
+  const runDir=fs.mkdtempSync(path.join(scratch,'coarse-clock-'));
+  const state=path.join(runDir,'run_result.json');
+  fs.writeFileSync(state,JSON.stringify({meta:{target:'a.example'}}));
+  const originalStat=fs.statSync,originalNow=Date.now;let now=originalNow();
+  const fixed=originalStat(state,{bigint:true});
+  fs.statSync=function(file,options){return file===state&&options?.bigint?fixed:originalStat.call(this,file,options)};
+  Date.now=()=>now;
+  try{
+    const first=api.readRunStateSnapshot(runDir,true,false);
+    fs.writeFileSync(state,JSON.stringify({meta:{target:'b.example'}}));
+    assert.equal(api.readRunStateSnapshot(runDir,true,false),first,'unchanged stat keeps a short cache lease');
+    now+=1000;
+    assert.equal(api.readRunStateSnapshot(runDir,true,false).target,'b.example');
+  }finally{fs.statSync=originalStat;Date.now=originalNow;}
+});
 test('nested Nuclei output changes invalidate cached findings',async()=>{
   const runDir=fs.mkdtempSync(path.join(scratch,'nested-'));
   fs.mkdirSync(path.join(runDir,'nuclei'));const output=path.join(runDir,'nuclei','results.jsonl');
   fs.writeFileSync(path.join(runDir,'run_result.json'),JSON.stringify({nuclei:{output_path:output}}));
   const write=name=>fs.writeFileSync(output,JSON.stringify({'template-id':name,'matched-at':'https://a.example/','info':{name,severity:'critical'}})+'\n');
   write('first');const first=api.readRunStateSnapshot(runDir,true,false);assert.equal(first.findings[0].name,'first');
-  write('other');const next=api.readRunStateSnapshot(runDir,true,false);assert.equal(next.findings[0].name,'other');assert.notEqual(first.updatedAt,next.updatedAt);
+  const version=fs.statSync(output).mtimeMs;write('other');fs.utimesSync(output,Date.now()/1000,(version+10)/1000);const next=api.readRunStateSnapshot(runDir,true,false);assert.equal(next.findings[0].name,'other');assert.notEqual(first.updatedAt,next.updatedAt);
 });
 test('stage summary separates skipped, partial and interrupted from successful completion',async()=>{
   const row=status=>({name:status,label:status,status,metric:'',reason:''});
