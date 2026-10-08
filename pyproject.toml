@@ -1,17 +1,31 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "reconbot"
 version = "0.1.0"
-description = "Automated recon tool with nmap and gobuster"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "COPYRIGHT", "THIRD_PARTY_NOTICES.md"]
+requires-python = ">=3.11"
+description = "Desktop reconnaissance, evidence review and focused security validation"
 authors = [{ name = "Polat" }]
-dependencies = []
+dependencies = [
+    "dnspython",
+    "PySide6",
+    "requests",
+    "urllib3>=2.8,<3",
+    "PyYAML",
+    "tldextract>=5.3,<6",
+]
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["reconbot*"]
+
+[tool.setuptools.package-data]
+"reconbot.ai" = ["settings_contract.json"]
+"reconbot.report" = ["assets/*.js", "assets/*LICENSE.txt"]
 
 [project.scripts]
 reconbot = "reconbot.cli:main"

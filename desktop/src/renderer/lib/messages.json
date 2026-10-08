@@ -1,0 +1,3704 @@
+[
+  [
+    "Dashboard",
+    "Genel Bakış"
+  ],
+  [
+    "Configure",
+    "Tarama"
+  ],
+  [
+    "Terminal",
+    "Terminal"
+  ],
+  [
+    "Report",
+    "Rapor"
+  ],
+  [
+    "Artifacts",
+    "Dosyalar"
+  ],
+  [
+    "Findings",
+    "Bulgular"
+  ],
+  [
+    "Threat Pipeline",
+    "Tehdit Zinciri"
+  ],
+  [
+    "Settings",
+    "Ayarlar"
+  ],
+  [
+    "Overview",
+    "Genel görünüm",
+    "Genel Bakış"
+  ],
+  [
+    "Scan configuration",
+    "Tarama ayarları"
+  ],
+  [
+    "Live console",
+    "Canlı konsol"
+  ],
+  [
+    "Report viewer",
+    "Rapor görüntüleyici"
+  ],
+  [
+    "Outputs and files",
+    "Çıktılar ve dosyalar"
+  ],
+  [
+    "Live findings",
+    "Canlı bulgular"
+  ],
+  [
+    "Attack chain",
+    "Saldırı zinciri"
+  ],
+  [
+    "Operator Console",
+    "Operatör Konsolu"
+  ],
+  [
+    "Operator Copilot",
+    "Operatör Yardımcısı"
+  ],
+  [
+    "Workspace",
+    "Çalışma Alanı"
+  ],
+  [
+    "Analysis",
+    "Analiz"
+  ],
+  [
+    "Current target",
+    "Hedef"
+  ],
+  [
+    "No target selected",
+    "Hedef seçilmedi"
+  ],
+  [
+    "Run state",
+    "Tarama durumu"
+  ],
+  [
+    "Profile",
+    "Profil"
+  ],
+  [
+    "Mode",
+    "Mod"
+  ],
+  [
+    "Risk score",
+    "Risk skoru"
+  ],
+  [
+    "Stage progress",
+    "Aşama ilerlemesi"
+  ],
+  [
+    "Progress",
+    "İlerleme"
+  ],
+  [
+    "Run details",
+    "Tarama ayrıntıları",
+    "Run linkage summary"
+  ],
+  [
+    "Run dir",
+    "Tarama klasörü"
+  ],
+  [
+    "Run directory",
+    "Tarama klasörü"
+  ],
+  [
+    "Report depth",
+    "Rapor ayrıntısı"
+  ],
+  [
+    "Partial report",
+    "Kısmi rapor"
+  ],
+  [
+    "Report ready",
+    "Rapor hazır"
+  ],
+  [
+    "Report pending",
+    "Rapor bekleniyor"
+  ],
+  [
+    "Report failed",
+    "Rapor oluşturulamadı"
+  ],
+  [
+    "Report unavailable",
+    "Rapor mevcut değil"
+  ],
+  [
+    "Not available",
+    "Mevcut değil"
+  ],
+  [
+    "Ready",
+    "Hazır",
+    "ready"
+  ],
+  [
+    "Pending",
+    "Bekleniyor"
+  ],
+  [
+    "Running",
+    "Çalışıyor",
+    "running"
+  ],
+  [
+    "Completed",
+    "Tamamlandı",
+    "completed"
+  ],
+  [
+    "Interrupted",
+    "Kesildi",
+    "interrupted"
+  ],
+  [
+    "Failed",
+    "Başarısız"
+  ],
+  [
+    "Queued",
+    "Sırada"
+  ],
+  [
+    "Idle",
+    "Boşta"
+  ],
+  [
+    "Incomplete",
+    "Tamamlanmamış"
+  ],
+  [
+    "Unknown",
+    "Bilinmiyor",
+    "unknown"
+  ],
+  [
+    "Disabled",
+    "Devre dışı",
+    "disabled"
+  ],
+  [
+    "Skipped",
+    "Atlandı",
+    "skipped"
+  ],
+  [
+    "Checking",
+    "Kontrol ediliyor"
+  ],
+  [
+    "Operational Situation",
+    "Operasyon Durumu"
+  ],
+  [
+    "Configure Scan",
+    "Tarama Ayarları"
+  ],
+  [
+    "Operator summary",
+    "Operatör Özeti"
+  ],
+  [
+    "Live Findings",
+    "Canlı Bulgular"
+  ],
+  [
+    "Stage monitor",
+    "Tarama Aşamaları"
+  ],
+  [
+    "Enabled Stages",
+    "Etkin Aşamalar"
+  ],
+  [
+    "Recent activity",
+    "Son Aktiviteler"
+  ],
+  [
+    "Live terminal",
+    "Canlı Terminal"
+  ],
+  [
+    "Host telemetry",
+    "Sistem Kaynakları"
+  ],
+  [
+    "System Status",
+    "Sistem Durumu"
+  ],
+  [
+    "Threat pipeline",
+    "Tehdit Akışı"
+  ],
+  [
+    "View all findings",
+    "Tüm Bulguları Gör"
+  ],
+  [
+    "First suggested action",
+    "İlk önerilen aksiyon"
+  ],
+  [
+    "Monitoring",
+    "İzleme modunda"
+  ],
+  [
+    "Operational signal detected",
+    "Operasyon sinyali tespit edildi"
+  ],
+  [
+    "Evidence stream",
+    "Kanıt akışı"
+  ],
+  [
+    "No live activity yet.",
+    "Henüz etkinlik yok."
+  ],
+  [
+    "No active signal.",
+    "Henüz etkin sinyal yok."
+  ],
+  [
+    "No active risk signal yet. Start a scan or select an existing run.",
+    "Henüz risk sinyali yok. Tarama başlatın veya geçmiş bir tarama seçin."
+  ],
+  [
+    "Scan is running. Findings will populate as artifacts arrive.",
+    "Tarama sürüyor. Sonuçlar geldikçe bulgular gösterilecek."
+  ],
+  [
+    "Discovery produced exposed paths; review content and status codes.",
+    "Keşif erişilebilir yollar buldu; içerik ve durum kodlarını inceleyin."
+  ],
+  [
+    "Validate highest-severity nuclei evidence",
+    "Önce en yüksek önem derecesindeki Nuclei kanıtını doğrulayın"
+  ],
+  [
+    "Review discovered directories and files",
+    "Keşfedilen dizin ve dosyaları inceleyin"
+  ],
+  [
+    "Start scan and monitor stage transitions",
+    "Tarama başlatın ve aşamaları izleyin"
+  ],
+  [
+    "No vulnerability findings or exposure signals yet.",
+    "Henüz zafiyet bulgusu veya erişim sinyali yok."
+  ],
+  [
+    "Search findings…",
+    "Bulgularda ara…"
+  ],
+  [
+    "All severities",
+    "Tüm önem dereceleri"
+  ],
+  [
+    "All sources",
+    "Tüm kaynaklar"
+  ],
+  [
+    "Select a finding to inspect its evidence.",
+    "Kanıtını incelemek için bir bulgu seçin."
+  ],
+  [
+    "Finding details",
+    "Bulgu Ayrıntıları"
+  ],
+  [
+    "Matched location",
+    "Eşleşen konum"
+  ],
+  [
+    "Validation",
+    "Doğrulama"
+  ],
+  [
+    "Evidence",
+    "Kanıt",
+    "evidence"
+  ],
+  [
+    "Evidence details",
+    "Kanıt detayları"
+  ],
+  [
+    "Source",
+    "Kaynak"
+  ],
+  [
+    "Location",
+    "Konum"
+  ],
+  [
+    "Next action",
+    "Sonraki adım"
+  ],
+  [
+    "No findings match your filters.",
+    "Filtrelerle eşleşen bulgu yok."
+  ],
+  [
+    "Clear filters",
+    "Filtreleri temizle"
+  ],
+  [
+    "Critical",
+    "Kritik"
+  ],
+  [
+    "High",
+    "Yüksek"
+  ],
+  [
+    "Medium",
+    "Orta"
+  ],
+  [
+    "Low",
+    "Düşük"
+  ],
+  [
+    "Info",
+    "Bilgi"
+  ],
+  [
+    "Exposure",
+    "Maruziyet",
+    "Erişim"
+  ],
+  [
+    "All",
+    "Tümü"
+  ],
+  [
+    "Open",
+    "Aç",
+    "open"
+  ],
+  [
+    "Folder",
+    "Klasör"
+  ],
+  [
+    "Copy",
+    "Kopyala",
+    "copy"
+  ],
+  [
+    "Clear",
+    "Temizle"
+  ],
+  [
+    "Stop",
+    "Durdur"
+  ],
+  [
+    "Start Scan",
+    "Taramayı Başlat"
+  ],
+  [
+    "Refresh",
+    "Yenile"
+  ],
+  [
+    "Refresh state",
+    "Durumu yenile"
+  ],
+  [
+    "Reload",
+    "Yeniden yükle"
+  ],
+  [
+    "Reload UI",
+    "Arayüzü yeniden yükle"
+  ],
+  [
+    "Retry",
+    "Tekrar dene"
+  ],
+  [
+    "Cancel",
+    "İptal"
+  ],
+  [
+    "Close",
+    "Kapat"
+  ],
+  [
+    "Apply",
+    "Uygula"
+  ],
+  [
+    "Reject",
+    "Reddet"
+  ],
+  [
+    "Expand",
+    "Devamını göster"
+  ],
+  [
+    "Continue",
+    "Devamını getir"
+  ],
+  [
+    "Interactive PTY",
+    "Canlı Konsol"
+  ],
+  [
+    "Ctrl+C forwards to PTY",
+    "Ctrl+C çalışan sürece iletilir"
+  ],
+  [
+    "connected / idle",
+    "bağlı / boşta"
+  ],
+  [
+    "connected / running",
+    "bağlı / çalışıyor"
+  ],
+  [
+    "Loading desktop cockpit",
+    "Çalışma alanı hazırlanıyor"
+  ],
+  [
+    "Current run artifacts",
+    "Aktif Tarama Dosyaları"
+  ],
+  [
+    "Outputs and scan history",
+    "Çıktılar ve Geçmiş Taramalar"
+  ],
+  [
+    "Scan history",
+    "Geçmiş Taramalar"
+  ],
+  [
+    "Available artifacts",
+    "Mevcut dosyalar"
+  ],
+  [
+    "Available",
+    "Mevcut"
+  ],
+  [
+    "Completeness",
+    "Tamamlanma durumu"
+  ],
+  [
+    "Historical",
+    "Geçmiş tarama"
+  ],
+  [
+    "Process attached",
+    "Canlı süreç bağlı"
+  ],
+  [
+    "Missing expected artifacts:",
+    "Eksik beklenen dosyalar:"
+  ],
+  [
+    "No scan history found under the configured output directory.",
+    "Çıktı klasöründe geçmiş tarama bulunamadı."
+  ],
+  [
+    "No run selected",
+    "Tarama seçilmedi"
+  ],
+  [
+    "No run has been selected. Select a previous run or start a new scan.",
+    "Henüz bir run seçilmedi. Geçmiş listesinden bir run seçebilir veya yeni tarama başlatabilirsiniz."
+  ],
+  [
+    "This scan is partial or incomplete. Inspect available artifacts or refresh its status.",
+    "Bu run kısmi veya tamamlanmamış durumda. Mevcut artifactleri inceleyebilir ve durumu yenileyebilirsiniz."
+  ],
+  [
+    "The report is available. Check coverage and stage status in the run record below.",
+    "Rapor mevcut. Kapsam ve aşama durumları aşağıdaki çalışma kaydından kontrol edilebilir."
+  ],
+  [
+    "The scan is incomplete or some stages failed. A report file does not mean the scan completed.",
+    "Tarama tamamlanmadı veya bazı aşamalar başarısız. Rapor bulunması taramanın tamamlandığı anlamına gelmez."
+  ],
+  [
+    "Inspect every artifact currently present in this run.",
+    "Bu taramada mevcut olan tüm dosyaları inceleyin."
+  ],
+  [
+    "Open Run Folder",
+    "Tarama klasörünü aç"
+  ],
+  [
+    "Open Raw Log",
+    "Ham logu aç"
+  ],
+  [
+    "Open Log",
+    "Logu aç"
+  ],
+  [
+    "Open JSON",
+    "JSON'u aç"
+  ],
+  [
+    "Open State JSON",
+    "Durum JSON'unu aç"
+  ],
+  [
+    "Open stages_live.json",
+    "stages_live.json'u aç"
+  ],
+  [
+    "Open Config / Request",
+    "Yapılandırma / isteği aç"
+  ],
+  [
+    "Open Report External",
+    "Raporu dışarıda aç"
+  ],
+  [
+    "Open External",
+    "Dışarıda aç"
+  ],
+  [
+    "Copy currentRunDir",
+    "Tarama klasörünü kopyala"
+  ],
+  [
+    "Copy Report Path",
+    "Rapor yolunu kopyala"
+  ],
+  [
+    "Go to Artifacts",
+    "Dosyalara git"
+  ],
+  [
+    "Unavailable for this run",
+    "Bu taramada mevcut değil"
+  ],
+  [
+    "Report updated",
+    "Rapor güncellendi"
+  ],
+  [
+    "Report view",
+    "Rapor Görünümü",
+    "Embedded report view"
+  ],
+  [
+    "Report status",
+    "Rapor durumu",
+    "Report durumu"
+  ],
+  [
+    "No report.html exists for this run.",
+    "Bu run için report.html mevcut değil."
+  ],
+  [
+    "The scan has not completed; report.html has not been generated.",
+    "Bu tarama tamamlanmamış. report.html henüz üretilmemiş."
+  ],
+  [
+    "The report has not been generated yet, or its file was removed.",
+    "Bu run henüz rapor üretmedi veya rapor dosyası kaldırılmış."
+  ],
+  [
+    "Report generation failed. Available logs and state files can still be inspected.",
+    "Bu run için rapor üretimi başarısız olmuş. Mevcut log ve durum dosyaları yine de incelenebilir."
+  ],
+  [
+    "Ask AI",
+    "AI'a sor"
+  ],
+  [
+    "Explain report",
+    "Raporu Açıkla"
+  ],
+  [
+    "Explain with AI",
+    "AI ile açıkla"
+  ],
+  [
+    "Ask AI about this section",
+    "Bu bölümü AI'a sor"
+  ],
+  [
+    "Is this finding real?",
+    "Bu bulgu gerçek mi?"
+  ],
+  [
+    "Ask about next steps",
+    "Sonraki adımı sor"
+  ],
+  [
+    "Next steps",
+    "Sonraki Adımlar"
+  ],
+  [
+    "Is this result reliable?",
+    "Bu Sonuç Güvenilir mi?"
+  ],
+  [
+    "New chat",
+    "Yeni sohbet"
+  ],
+  [
+    "Technical details",
+    "Teknik detaylar"
+  ],
+  [
+    "Messages sent to the model",
+    "Modele gönderilen mesajlar"
+  ],
+  [
+    "Raw provider content / rendered response",
+    "Ham model cevabı / gösterilen cevap"
+  ],
+  [
+    "AI Context Preview",
+    "AI Bağlam Önizlemesi"
+  ],
+  [
+    "Suggested questions",
+    "Önerilen sorular"
+  ],
+  [
+    "More",
+    "Diğer"
+  ],
+  [
+    "Send",
+    "Gönder"
+  ],
+  [
+    "Write a message… Shift+Enter for a new line",
+    "Mesaj yaz… Shift+Enter ile yeni satır"
+  ],
+  [
+    "Open chat",
+    "Sohbeti Aç"
+  ],
+  [
+    "Interpret logs",
+    "Logları Yorumla"
+  ],
+  [
+    "Review logs",
+    "Logları İncele"
+  ],
+  [
+    "Suggest settings",
+    "Ayar Öner"
+  ],
+  [
+    "AI settings",
+    "AI Ayarları"
+  ],
+  [
+    "Open AI settings",
+    "AI Ayarlarını Aç"
+  ],
+  [
+    "How to start?",
+    "Nasıl çalıştırılır?"
+  ],
+  [
+    "Test connection",
+    "Bağlantıyı Test Et"
+  ],
+  [
+    "Setup guide",
+    "Kurulum Rehberi"
+  ],
+  [
+    "Open setup guide",
+    "Kurulum rehberini aç",
+    "Kurulum Rehberini Aç",
+    "Kurulum Rehberi'ni aç."
+  ],
+  [
+    "Disable AI",
+    "AI'ı Devre Dışı Bırak"
+  ],
+  [
+    "Checking AI connection…",
+    "AI bağlantısı kontrol ediliyor..."
+  ],
+  [
+    "No AI connection",
+    "AI bağlantısı yok"
+  ],
+  [
+    "AI disabled",
+    "AI devre dışı"
+  ],
+  [
+    "Model is responding",
+    "Model yanıt üretiyor"
+  ],
+  [
+    "Request queued",
+    "İstek sırada"
+  ],
+  [
+    "Model timed out",
+    "Model zaman aşımına uğradı",
+    "Model yavaş yanıt verdi / zaman aşımı"
+  ],
+  [
+    "Model responded slowly",
+    "Model yavaş yanıt verdi"
+  ],
+  [
+    "Model is busy",
+    "Model meşgul"
+  ],
+  [
+    "Model returned no final answer",
+    "Model final cevap üretmedi"
+  ],
+  [
+    "Model is missing or its name does not match",
+    "Model yüklü değil veya adı eşleşmiyor"
+  ],
+  [
+    "Endpoint returned an incompatible response",
+    "Endpoint OpenAI-compatible olmayan cevap döndürdü"
+  ],
+  [
+    "Endpoint incompatible",
+    "Endpoint uyumsuz"
+  ],
+  [
+    "Local model connected",
+    "Yerel model bağlı"
+  ],
+  [
+    "Settings suggestion ready",
+    "Ayar önerisi hazır"
+  ],
+  [
+    "Report ready · Summarize with AI",
+    "Rapor hazır · Özet çıkarabilirim"
+  ],
+  [
+    "Report ready. What would you like to know?",
+    "Rapor hazır. Ne öğrenmek istiyorsun?"
+  ],
+  [
+    "Copilot ready.",
+    "Copilot hazır."
+  ],
+  [
+    "AI endpoint unavailable",
+    "AI endpoint hazır değil"
+  ],
+  [
+    "AI is optional and does not block startup.",
+    "AI opsiyoneldir; startup'ı bloklamaz."
+  ],
+  [
+    "AI chat is available.",
+    "AI sohbeti kullanılabilir."
+  ],
+  [
+    "Could not read AI status.",
+    "AI durumu alınamadı."
+  ],
+  [
+    "Connection successful. Local model ready.",
+    "Bağlantı başarılı. Yerel model hazır."
+  ],
+  [
+    "Connection needs to be checked again",
+    "Bağlantı tekrar kontrol edilmeli"
+  ],
+  [
+    "Test the connection to verify the selected model.",
+    "Bağlantıyı Test Et ile seçili modeli tekrar doğrula."
+  ],
+  [
+    "Test the connection again.",
+    "Bağlantıyı Test Et ile tekrar dene."
+  ],
+  [
+    "Model or endpoint changed; test the connection again.",
+    "Model/baseUrl değiştiği için bağlantı testi tekrar gerekli."
+  ],
+  [
+    "AI is disabled. Enable it in Settings > AI or continue without it.",
+    "AI devre dışı. Settings > AI içinden etkinleştirebilir veya ReconBot'u AI olmadan kullanmaya devam edebilirsin."
+  ],
+  [
+    "Restore draft",
+    "Taslağı geri yükle"
+  ],
+  [
+    "Try again",
+    "Tekrar dene"
+  ],
+  [
+    "Context limit exceeded",
+    "Bağlam sınırı aşıldı"
+  ],
+  [
+    "Reduce context and retry",
+    "Bağlamı küçültüp tekrar dene"
+  ],
+  [
+    "Try with a short context",
+    "Kısa context ile dene"
+  ],
+  [
+    "Increase output",
+    "Output artır"
+  ],
+  [
+    "The answer reached the token limit.",
+    "Cevap token limitine takıldı."
+  ],
+  [
+    "Increase max output or use Deep Analysis Mode. The answer may be incomplete.",
+    "Max output artır veya Deep Analysis Mode kullan. Cevap yarıda kesilmiş olabilir."
+  ],
+  [
+    "Model format",
+    "Model formatı"
+  ],
+  [
+    "Model suggestions",
+    "Model önerileri"
+  ],
+  [
+    "Refresh models",
+    "Modelleri Yenile"
+  ],
+  [
+    "Endpoint models",
+    "Endpoint modelleri"
+  ],
+  [
+    "Use manual model name",
+    "Manual model name kullan"
+  ],
+  [
+    "Refresh models first ·",
+    "Önce Modelleri Yenile ·"
+  ],
+  [
+    "The endpoint model list appears here when supported.",
+    "Endpoint model listesi destekliyorsa burada görünür."
+  ],
+  [
+    "This model is not listed by the endpoint. Select a loaded model or correct its name.",
+    "Seçili model endpoint üzerinde görünmüyor. Yüklü modellerden birini seç veya model adını elle düzelt."
+  ],
+  [
+    "Model ready.",
+    "Model hazır."
+  ],
+  [
+    "No automatic model download or installation.",
+    "Model indirme veya kurulum otomatik yapılmaz."
+  ],
+  [
+    "AI settings suggestion",
+    "AI Ayar Önerisi"
+  ],
+  [
+    "Settings suggestions disabled.",
+    "Ayar önerileri kapalı."
+  ],
+  [
+    "AI settings suggestion cards are enabled.",
+    "AI ayar önerisi kartları açık."
+  ],
+  [
+    "The settings suggestion could not be validated.",
+    "Ayar önerisi doğrulanamadı."
+  ],
+  [
+    "Local AI is offline",
+    "Yerel AI çalışmıyor"
+  ],
+  [
+    "Local AI endpoint unreachable",
+    "Yerel AI endpoint'e ulaşılamıyor"
+  ],
+  [
+    "The local AI endpoint is unreachable. Follow the steps below to start the model.",
+    "Yerel AI endpoint'e ulaşılamıyor. Modeli başlatmak için aşağıdaki adımları izle."
+  ],
+  [
+    "ReconBot AI could not connect to the local endpoint. ReconBot remains usable; start the local model to chat.",
+    "ReconBot AI yerel OpenAI-compatible endpoint'e bağlanamadı. ReconBot normal çalışmaya devam eder; AI sohbeti için local modeli başlatman gerekir."
+  ],
+  [
+    "ReconBot AI is optional. Scanning, reports and settings work without AI.",
+    "ReconBot AI opsiyoneldir. ReconBot tarama, rapor ve ayar ekranları AI olmadan normal çalışır."
+  ],
+  [
+    "No cloud provider is required; use a local OpenAI-compatible endpoint.",
+    "Cloud provider gerekmez; local OpenAI-compatible endpoint yeterlidir."
+  ],
+  [
+    "Open LM Studio.",
+    "LM Studio'yu aç."
+  ],
+  [
+    "Open the Local Server / Developer Server section.",
+    "Local Server / Developer Server bölümünü aç."
+  ],
+  [
+    "Load a model:",
+    "Modeli yükle:"
+  ],
+  [
+    "Check that the server address is:",
+    "Server adresinin şu olduğundan emin ol:"
+  ],
+  [
+    "Set the base URL in Settings > AI.",
+    "Base URL değerini Settings > AI içinden ayarla."
+  ],
+  [
+    "Set the model name in Settings > AI.",
+    "Model adını Settings > AI içinden ayarla."
+  ],
+  [
+    "Press Test connection.",
+    "\"Bağlantıyı Test Et\" butonuna bas."
+  ],
+  [
+    "Press Test connection in ReconBot.",
+    "ReconBot'ta \"Bağlantıyı Test Et\" butonuna bas."
+  ],
+  [
+    "Start an OpenAI-compatible chat completions endpoint.",
+    "OpenAI-compatible chat completions endpoint başlat."
+  ],
+  [
+    "Final-answer instruct models:",
+    "Final message.content döndüren instruct modeller:"
+  ],
+  [
+    "Reasoning was not displayed. Try a compact final-only request or another instruct model.",
+    "Düşünme izi gösterilmedi. Compact final-only retry veya farklı bir instruct model deneyebilirsin."
+  ],
+  [
+    "The model returned no usable final text. Your message is preserved; try again.",
+    "Model kullanılabilir bir final metin döndürmedi. Mesajın korundu; yeniden deneyebilirsin."
+  ],
+  [
+    "Interface language",
+    "Arayüz dili"
+  ],
+  [
+    "Scan Control",
+    "Tarama Kontrolü"
+  ],
+  [
+    "Target",
+    "Hedef"
+  ],
+  [
+    "Wordlist",
+    "Kelime listesi"
+  ],
+  [
+    "Scan profile",
+    "Tarama profili"
+  ],
+  [
+    "Execution Mode",
+    "Çalıştırma Modu"
+  ],
+  [
+    "Execution mode",
+    "Çalıştırma modu"
+  ],
+  [
+    "Selected tools",
+    "Seçili araçlar"
+  ],
+  [
+    "Selected profile",
+    "Seçili profil"
+  ],
+  [
+    "Enabled",
+    "Etkin",
+    "enabled"
+  ],
+  [
+    "Defaults",
+    "Varsayılanlar"
+  ],
+  [
+    "Default Profile Presets",
+    "Varsayılan Profil Seçenekleri"
+  ],
+  [
+    "Default Scan Profile",
+    "Varsayılan Tarama Profili"
+  ],
+  [
+    "Tool Parameters",
+    "Araç Parametreleri"
+  ],
+  [
+    "Global Limits",
+    "Genel Sınırlar"
+  ],
+  [
+    "Global timeout",
+    "Genel zaman aşımı"
+  ],
+  [
+    "Shared Guardrails",
+    "Ortak Sınırlar"
+  ],
+  [
+    "Speed",
+    "Hız"
+  ],
+  [
+    "Noise",
+    "Yoğunluk"
+  ],
+  [
+    "Coverage",
+    "Kapsam"
+  ],
+  [
+    "Traffic",
+    "Trafik"
+  ],
+  [
+    "Fast",
+    "Hızlı"
+  ],
+  [
+    "Balanced",
+    "Dengeli"
+  ],
+  [
+    "Slow",
+    "Yavaş"
+  ],
+  [
+    "Custom",
+    "Özel"
+  ],
+  [
+    "Default enabled",
+    "Varsayılan etkin"
+  ],
+  [
+    "Applied settings for this run",
+    "Bu taramada uygulanan ayarlar"
+  ],
+  [
+    "Settings used by this run",
+    "Bu taramada uygulanan ayarlar"
+  ],
+  [
+    "Scan tools active",
+    "Tarama araçları etkin"
+  ],
+  [
+    "Active scanners skipped",
+    "Aktif tarayıcılar atlandı"
+  ],
+  [
+    "OSINT included",
+    "OSINT dahil"
+  ],
+  [
+    "OSINT disabled",
+    "OSINT devre dışı"
+  ],
+  [
+    "OSINT Only mode",
+    "Yalnız OSINT modu"
+  ],
+  [
+    "OSINT Only selected: active scanner tools below are kept as defaults but skipped for this run.",
+    "Yalnız OSINT seçildi: aşağıdaki araç ayarları korunur, bu taramada aktif araçlar atlanır."
+  ],
+  [
+    "OSINT Only: active tools skipped",
+    "Yalnız OSINT: aktif araçlar atlandı"
+  ],
+  [
+    "Overrides here are written only to the generated app config for this run; project defaults stay in config.yaml. OSINT Only skips active scanners and runs passive public enrichment only.",
+    "Buradaki değişiklikler bu taramanın yapılandırmasına yazılır; proje varsayılanları config.yaml içinde kalır. Yalnız OSINT modu aktif araçları atlar ve pasif istihbarat toplar."
+  ],
+  [
+    "URL target mode",
+    "URL hedef modu"
+  ],
+  [
+    "URL target mode keeps domain discovery tools visible but marks subfinder, dnsx and httpx as auto-skipped when the Python core intentionally skips them.",
+    "URL hedef modunda domain keşif araçları görünür kalır; Python bu araçları atladığında subfinder, dnsx ve httpx atlandı olarak gösterilir."
+  ],
+  [
+    "Default preference. Choose the actual run mode in Scan configuration. OSINT does not change the main risk score.",
+    "Varsayılan tercih. Gerçek run modu Configure ekranında seçilir. OSINT ana risk skorunu etkilemez."
+  ],
+  [
+    "Top ports",
+    "Port sayısı"
+  ],
+  [
+    "Concurrency / rate",
+    "Eşzamanlılık / hız"
+  ],
+  [
+    "Timeout",
+    "Zaman aşımı"
+  ],
+  [
+    "Threads",
+    "İş parçacığı"
+  ],
+  [
+    "Extensions",
+    "Uzantılar"
+  ],
+  [
+    "Rate limit",
+    "Hız sınırı"
+  ],
+  [
+    "Rate limit (requests/s)",
+    "Hız sınırı (istek/sn)"
+  ],
+  [
+    "Max depth",
+    "En fazla derinlik"
+  ],
+  [
+    "Max retained URLs",
+    "Saklanacak URL sınırı"
+  ],
+  [
+    "Max target URLs",
+    "Hedef URL sınırı"
+  ],
+  [
+    "Max runtime",
+    "Çalışma süresi sınırı"
+  ],
+  [
+    "Max screenshots",
+    "Ekran görüntüsü sınırı"
+  ],
+  [
+    "Max body size",
+    "Yanıt boyutu sınırı"
+  ],
+  [
+    "Follow redirects",
+    "Yönlendirmeleri izle"
+  ],
+  [
+    "Severity filter",
+    "Önem derecesi filtresi"
+  ],
+  [
+    "Template profile",
+    "Şablon profili"
+  ],
+  [
+    "Max signals",
+    "Sinyal sınırı"
+  ],
+  [
+    "Max results",
+    "Sonuç sınırı"
+  ],
+  [
+    "Katana URLs",
+    "Katana URL'leri"
+  ],
+  [
+    "Gobuster Hits",
+    "Gobuster Eşleşmeleri"
+  ],
+  [
+    "FFUF Hits",
+    "FFUF Eşleşmeleri"
+  ],
+  [
+    "Nuclei Findings",
+    "Nuclei Bulguları"
+  ],
+  [
+    "Web Checks",
+    "Web Kontrolleri"
+  ],
+  [
+    "Screenshots",
+    "Ekran Görüntüleri"
+  ],
+  [
+    "OSINT Sources",
+    "OSINT Kaynakları"
+  ],
+  [
+    "Certificate transparency",
+    "Sertifika şeffaflığı"
+  ],
+  [
+    "Historical URL metadata",
+    "Geçmiş URL verileri"
+  ],
+  [
+    "Passive DNS",
+    "Pasif DNS"
+  ],
+  [
+    "GitHub Code Search",
+    "GitHub Kod Arama"
+  ],
+  [
+    "GitHub token env",
+    "GitHub token ortam değişkeni"
+  ],
+  [
+    "Known Breach Catalog",
+    "Bilinen İhlal Kataloğu"
+  ],
+  [
+    "Known breach catalog",
+    "Bilinen ihlal kataloğu"
+  ],
+  [
+    "Organization intelligence",
+    "Organizasyon istihbaratı"
+  ],
+  [
+    "Infrastructure intelligence",
+    "Altyapı istihbaratı"
+  ],
+  [
+    "Public code references",
+    "Public code referansları"
+  ],
+  [
+    "Search dork suggestions",
+    "Search dork önerileri"
+  ],
+  [
+    "Always passive",
+    "Sadece pasif zorunlu"
+  ],
+  [
+    "Wayback timeout",
+    "Wayback zaman aşımı"
+  ],
+  [
+    "Wayback retry count",
+    "Wayback tekrar sayısı"
+  ],
+  [
+    "crt.sh timeout",
+    "crt.sh zaman aşımı"
+  ],
+  [
+    "crt.sh retry count",
+    "crt.sh tekrar sayısı"
+  ],
+  [
+    "Darkweb Metadata Intelligence",
+    "Darkweb Metadata İstihbaratı"
+  ],
+  [
+    "Darkweb / Leak / Breach Metadata Feed",
+    "Darkweb / Sızıntı / İhlal Metadata Feed’i"
+  ],
+  [
+    "Darkweb intelligence enabled",
+    "Darkweb istihbaratı etkin"
+  ],
+  [
+    "Manual metadata import",
+    "Manuel metadata içe aktarımı"
+  ],
+  [
+    "Manual source name",
+    "Manuel kaynak adı"
+  ],
+  [
+    "Manual metadata file path",
+    "Manuel metadata dosya yolu"
+  ],
+  [
+    "Manual max results",
+    "Manuel sonuç sınırı"
+  ],
+  [
+    "Custom HTTPS provider",
+    "Özel HTTPS sağlayıcısı"
+  ],
+  [
+    "Provider",
+    "Sağlayıcı"
+  ],
+  [
+    "Provider URL",
+    "Sağlayıcı URL'si"
+  ],
+  [
+    "Provider timeout",
+    "Sağlayıcı zaman aşımı"
+  ],
+  [
+    "Provider max results",
+    "Sağlayıcı sonuç sınırı"
+  ],
+  [
+    "Token detected",
+    "Token bulundu"
+  ],
+  [
+    "Source name",
+    "Kaynak adı"
+  ],
+  [
+    "Source type",
+    "Kaynak tipi"
+  ],
+  [
+    "Maximum results",
+    "Maksimum sonuç"
+  ],
+  [
+    "Local JSON file path",
+    "Local JSON dosya yolu"
+  ],
+  [
+    "Enable metadata feed",
+    "Metadata feed’i etkinleştir"
+  ],
+  [
+    "Load a local example metadata feed",
+    "Yerel örnek metadata feed’i yükle",
+    "Local örnek metadata feed’i yükle"
+  ],
+  [
+    "The demo fixture is for local testing only.",
+    "Demo fixture sadece yerel test içindir."
+  ],
+  [
+    "Metadata references are not active vulnerabilities and do not affect the risk score.",
+    "Metadata referansları aktif zafiyet bulgusu değildir ve risk skorunu etkilemez."
+  ],
+  [
+    "Metadata references are not active vulnerabilities.",
+    "Metadata referansları aktif zafiyet değildir."
+  ],
+  [
+    "This collector consumes normalized breach/leak metadata only.",
+    "Bu collector yalnızca normalize edilmiş breach/leak metadata tüketir."
+  ],
+  [
+    "Metadata only. No Tor/onion crawling or collection of credentials, dumps or raw leaked records.",
+    "Sadece metadata. Tor/onion yok. Credential, dump veya ham sızıntı kaydı toplanmaz."
+  ],
+  [
+    "Metadata only. Tor/onion crawling is unsupported.",
+    "Metadata-only. Tor/onion crawling desteklenmez."
+  ],
+  [
+    "Tor/onion crawling is unsupported.",
+    "Tor/onion crawling desteklenmez."
+  ],
+  [
+    "Do not use files or providers containing credentials, dumps or raw leaked records.",
+    "Credential, dump veya ham sızıntı kaydı içeren dosya/sağlayıcı kullanmayın."
+  ],
+  [
+    "Do not configure feeds containing credentials, dumps, raw paste content or personal records.",
+    "Credential, dump, raw paste content veya personal record içeren feed yapılandırma."
+  ],
+  [
+    "ReconBot does not collect or store this material.",
+    "ReconBot bu verileri toplamaz ve saklamaz."
+  ],
+  [
+    "Plain local path only. Feed content is not loaded or copied into UI state.",
+    "Yalnızca düz local path. Feed içeriği UI state içine yüklenmez veya kopyalanmaz."
+  ],
+  [
+    "Only https:// endpoints are accepted.",
+    "Yalnızca https:// endpoint kabul edilir."
+  ],
+  [
+    "HTTPS metadata endpoints only. HTTP, file and onion URLs are rejected.",
+    "Yalnızca https:// metadata endpoint. http/file/onion reddedilir."
+  ],
+  [
+    "Optional source label.",
+    "Opsiyonel kaynak etiketi."
+  ],
+  [
+    "Optional display/source label; no hardcoded provider URL.",
+    "Opsiyonel display/source etiketi; provider URL hardcode edilmez."
+  ],
+  [
+    "Set automatically from the selected provider.",
+    "Provider seçimine göre otomatik belirlenir."
+  ],
+  [
+    "The provider registry enforces metadata-only feed rules before runtime.",
+    "Provider registry runtime öncesinde metadata-only feed kurallarını uygular."
+  ],
+  [
+    "This provider profile is not available yet. Scans cannot start while it is enabled.",
+    "Provider profile yakında. Bu provider etkinken scan başlatılamaz."
+  ],
+  [
+    "Metadata-only JSON. Credential, dump and raw content is suppressed.",
+    "Metadata-only JSON. Credential/dump/raw içerik bastırılır."
+  ],
+  [
+    "Provider setup uses environment variable names, never token values.",
+    "Provider setup. Token değerleri saklanmaz veya gösterilmez."
+  ],
+  [
+    "Token availability only; its value is never written to the UI, config or report.",
+    "Boolean durum; token değeri asla UI/config/report içine yazılmaz."
+  ],
+  [
+    "API key env var",
+    "API key ortam değişkeni"
+  ],
+  [
+    "API key env var name",
+    "API key ortam değişkeni adı"
+  ],
+  [
+    "Enter an environment variable name, not the API key.",
+    "API key değeri buraya yazılmaz. Sadece ortam değişkeni adı girilir."
+  ],
+  [
+    "Optional. Environment variable name only, not its secret value.",
+    "Opsiyonel. Secret değeri değil, sadece ortam değişkeni adı."
+  ],
+  [
+    "Optional. Store the environment variable name only, never its secret value.",
+    "Opsiyonel. Yalnızca ortam değişkeni adını sakla; secret değerini asla yazma."
+  ],
+  [
+    "Environment variable name only, not its secret value.",
+    "Secret değeri değil, sadece ortam değişkeni adı."
+  ],
+  [
+    "Defaults to GITHUB_TOKEN. Only the environment variable name is stored.",
+    "Default GITHUB_TOKEN. Sadece env var adı saklanır."
+  ],
+  [
+    "ReconBot does not write API key values to run_result.json or reports.",
+    "ReconBot API key değerini run_result.json veya raporlara yazmaz."
+  ],
+  [
+    "AI enabled",
+    "AI etkin"
+  ],
+  [
+    "Response mode",
+    "Cevap modu"
+  ],
+  [
+    "Thinking/Reasoning",
+    "Düşünme / Reasoning"
+  ],
+  [
+    "Max output tokens",
+    "Çıktı token sınırı"
+  ],
+  [
+    "Max context chars",
+    "Bağlam karakter sınırı"
+  ],
+  [
+    "Temperature",
+    "Temperature"
+  ],
+  [
+    "Manual model name",
+    "Manuel model adı"
+  ],
+  [
+    "Report-ready prompt",
+    "Rapor özeti kısayolu"
+  ],
+  [
+    "Settings recommendations",
+    "Ayar önerileri"
+  ],
+  [
+    "Approved settings changes",
+    "Onaylı ayar değişiklikleri"
+  ],
+  [
+    "Adaptive",
+    "Uyarlanabilir"
+  ],
+  [
+    "Fast Operator Mode",
+    "Hızlı Operatör Modu"
+  ],
+  [
+    "Deep Analysis Mode",
+    "Derin Analiz Modu"
+  ],
+  [
+    "Adaptive is the default and plans around the model, intent and input size. Fast favors latency; Deep reserves a larger analysis budget.",
+    "Adaptive varsayılandır ve model/intent/input boyutuna göre plan yapar. Fast gecikmeyi, Deep daha geniş analiz bütçesini tercih eder."
+  ],
+  [
+    "Local OpenAI-compatible endpoint. Only API key environment variable names are stored. ReconBot works without AI.",
+    "Local OpenAI-compatible endpoint. Secret değerleri saklanmaz; yalnız env var adı tutulur. ReconBot AI olmadan normal çalışır."
+  ],
+  [
+    "About",
+    "Hakkında"
+  ],
+  [
+    "Empty value; the previous valid value was kept.",
+    "Boş bırakıldı; önceki geçerli değer korundu."
+  ],
+  [
+    "Invalid number; the previous valid value was kept.",
+    "Geçersiz sayı; önceki geçerli değer korundu."
+  ],
+  [
+    "Reset view",
+    "Görünümü sıfırla"
+  ],
+  [
+    "Return to Dashboard",
+    "Genel Bakış'a dön"
+  ],
+  [
+    "Renderer Error",
+    "Arayüz Hatası"
+  ],
+  [
+    "App section could not load",
+    "App bölümü yüklenemedi"
+  ],
+  [
+    "Report section could not load",
+    "Report bölümü yüklenemedi"
+  ],
+  [
+    "Artifacts section could not load",
+    "Artifacts bölümü yüklenemedi"
+  ],
+  [
+    "AI panel could not load",
+    "AI paneli yüklenemedi"
+  ],
+  [
+    "This section encountered an error. ReconBot remains usable.",
+    "Bu bölüm hata verdi, fakat ReconBot arayüzü çalışmaya devam eder."
+  ],
+  [
+    "Incomplete scan coverage:",
+    "Tarama kapsamı eksik:"
+  ],
+  [
+    ". No findings does not mean the scan is clean.",
+    ". Bulgu olmaması temiz tarama anlamına gelmez."
+  ],
+  [
+    "Stages not run:",
+    "Çalıştırılmayan aşamalar:"
+  ],
+  [
+    "No findings",
+    "bulgu bulunmadı"
+  ],
+  [
+    "Not run",
+    "çalıştırılmadı"
+  ],
+  [
+    "Incomplete coverage",
+    "kapsam eksik"
+  ],
+  [
+    "Waiting",
+    "bekleniyor"
+  ],
+  [
+    "Review now",
+    "İncele",
+    "review now"
+  ],
+  [
+    "crawl surface",
+    "keşif yüzeyi"
+  ],
+  [
+    "content paths",
+    "içerik yolları"
+  ],
+  [
+    "fuzz hits",
+    "fuzz eşleşmeleri"
+  ],
+  [
+    "visual proof",
+    "görsel kanıt"
+  ],
+  [
+    "signals",
+    "sinyaller"
+  ],
+  [
+    "pending",
+    "bekliyor"
+  ],
+  [
+    "waiting",
+    "bekliyor"
+  ],
+  [
+    "no run",
+    "tarama yok"
+  ],
+  [
+    "run linked",
+    "tarama bağlı"
+  ],
+  [
+    "report ready",
+    "rapor hazır"
+  ],
+  [
+    "report pending",
+    "rapor bekleniyor"
+  ],
+  [
+    "created on scan start",
+    "tarama başladığında oluşturulur"
+  ],
+  [
+    "IP enrichment: queued",
+    "IP zenginleştirme: sırada"
+  ],
+  [
+    "IP enrichment: running",
+    "IP zenginleştirme: çalışıyor"
+  ],
+  [
+    "IP enrichment: skipped",
+    "IP zenginleştirme: atlandı"
+  ],
+  [
+    "IP enrichment: error",
+    "IP zenginleştirme: hata"
+  ],
+  [
+    "IP / Nmap Enrichment",
+    "IP / Nmap Zenginleştirme"
+  ],
+  [
+    "Resolved IP detected:",
+    "Çözümlenen IP:"
+  ],
+  [
+    "Resolved IP found:",
+    "IP bulundu:"
+  ],
+  [
+    "The URL/domain scan remains the primary run. IP enrichment attaches auxiliary network context only.",
+    "URL/domain taraması ana çalışma olarak kalır. IP zenginleştirme ek ağ bağlamı sağlar."
+  ],
+  [
+    "Lightweight IP Enrichment",
+    "Hafif IP Zenginleştirme"
+  ],
+  [
+    "Detailed Nmap",
+    "Ayrıntılı Nmap"
+  ],
+  [
+    "Skip",
+    "Atla"
+  ],
+  [
+    "Auxiliary IP context. It should not override URL/domain findings without strong evidence.",
+    "Ek IP bağlamı. Güçlü kanıt olmadan URL/domain bulgularını değiştirmemelidir."
+  ],
+  [
+    "Primary Nmap already covered resolved IP; reusing as auxiliary context.",
+    "Ana Nmap taraması IP'yi kapsadı; sonuçlar ek bağlam olarak kullanılıyor."
+  ],
+  [
+    "Attack Graph Network",
+    "Saldırı İlişkileri"
+  ],
+  [
+    "Attack graph filters",
+    "İlişki filtreleri"
+  ],
+  [
+    "Pipeline Evidence",
+    "Zincir Kanıtları"
+  ],
+  [
+    "No evidence linked to this node yet.",
+    "Bu düğüme bağlı kanıt yok."
+  ],
+  [
+    "Strongest path",
+    "Öncelikli yol"
+  ],
+  [
+    "Tool matrix",
+    "Araç durumu"
+  ],
+  [
+    "Recon",
+    "Keşif"
+  ],
+  [
+    "Discovery",
+    "Keşif"
+  ],
+  [
+    "Enumeration",
+    "Listeleme"
+  ],
+  [
+    "Vuln Scan",
+    "Zafiyet Taraması"
+  ],
+  [
+    "Vulnerability",
+    "Zafiyet"
+  ],
+  [
+    "Graph",
+    "İlişkiler"
+  ],
+  [
+    "Network",
+    "Ağ"
+  ],
+  [
+    "Uptime",
+    "Çalışma süresi"
+  ],
+  [
+    "approval required",
+    "onay gerekli"
+  ],
+  [
+    "on",
+    "açık"
+  ],
+  [
+    "off",
+    "kapalı"
+  ],
+  [
+    "AI quick actions",
+    "Copilot hızlı işlemleri"
+  ],
+  [
+    "Connection status ·",
+    "Bağlantı Durumu ·"
+  ],
+  [
+    "History loaded:",
+    "Geçmiş tarama yüklendi:"
+  ],
+  [
+    "· Rescan this target",
+    "· Bu hedefi yeniden tara"
+  ],
+  [
+    "new messages · Jump to latest",
+    "yeni mesaj · En sona git"
+  ],
+  [
+    "· incompatible with chat",
+    "· chat uyumsuz"
+  ],
+  [
+    "· selected, not listed by endpoint",
+    "· seçili, endpointte yok"
+  ],
+  [
+    "Loading config defaults…",
+    "Loading config defaults..."
+  ],
+  [
+    "Scan workspace ready",
+    "Çalışma alanı hazır"
+  ],
+  [
+    "Report updated with IP enrichment",
+    "Rapor IP zenginleştirmesiyle güncellendi"
+  ],
+  [
+    "Resize Copilot",
+    "AI panelinin genişliğini değiştir"
+  ],
+  [
+    "Show more findings",
+    "Daha fazla bulgu göster"
+  ],
+  [
+    "Copy location",
+    "Konumu kopyala"
+  ],
+  [
+    "Copied",
+    "Kopyalandı"
+  ],
+  [
+    "Copy failed",
+    "Kopyalama başarısız"
+  ],
+  [
+    "A template match needs manual validation; it is not proof of exploitation.",
+    "Şablon eşleşmesi manuel doğrulama gerektirir; istismar edildiğinin kanıtı değildir."
+  ],
+  [
+    "Review the available evidence before drawing a security conclusion.",
+    "Güvenlik sonucuna varmadan önce mevcut kanıtları inceleyin."
+  ],
+  [
+    "{count} Nuclei matches require operator validation.",
+    "{count} Nuclei eşleşmesi operatör doğrulaması gerektiriyor."
+  ],
+  [
+    "Ask about the report, logs, findings or settings.",
+    "Rapor, log, bulgu veya ayarlar hakkında soru sorabilirsin."
+  ],
+  [
+    "Collapse",
+    "Daralt"
+  ],
+  [
+    "Current outputs",
+    "Aktif Çıktılar"
+  ],
+  [
+    "None",
+    "none"
+  ],
+  [
+    "Runs",
+    "runs"
+  ],
+  [
+    "Risk",
+    "· risk"
+  ],
+  [
+    "Log",
+    "Log"
+  ],
+  [
+    "Yes",
+    "yes"
+  ],
+  [
+    "No",
+    "no"
+  ],
+  [
+    "summary",
+    "özet"
+  ],
+  [
+    "balanced",
+    "dengeli"
+  ],
+  [
+    "deep",
+    "derin"
+  ],
+  [
+    "fast",
+    "hızlı"
+  ],
+  [
+    "slow",
+    "yavaş"
+  ],
+  [
+    "custom",
+    "özel"
+  ],
+  [
+    "Local server or domain",
+    "https://target.local or domain"
+  ],
+  [
+    "The IP resolves before scanning. The URL/domain remains your primary target.",
+    "resolves before scan start. The primary scan target remains the URL/domain you entered."
+  ],
+  [
+    "config.yaml loaded",
+    "config.yaml yüklendi"
+  ],
+  [
+    "Generated config",
+    "Oluşturulan yapılandırma"
+  ],
+  [
+    "OSINT Enrichment",
+    "OSINT Zenginleştirme"
+  ],
+  [
+    "OSINT-only",
+    "Yalnız OSINT"
+  ],
+  [
+    "skipped: OSINT Only",
+    "atlandı: Yalnız OSINT"
+  ],
+  [
+    "auto-skipped: URL target mode",
+    "otomatik atlandı: URL hedef modu"
+  ],
+  [
+    "Input token estimate ·",
+    "input token tahmini ·"
+  ],
+  [
+    "Output",
+    "output"
+  ],
+  [
+    "+ safety",
+    "+ güvenlik payı"
+  ],
+  [
+    "· system reserve",
+    "· sistem payı"
+  ],
+  [
+    "s/attempt ·",
+    "sn/deneme ·"
+  ],
+  [
+    "s watchdog",
+    "sn toplam süre sınırı"
+  ],
+  [
+    "turn · compact",
+    "tur · kısaltılmış"
+  ],
+  [
+    "Resolved request plan",
+    "Etkin istek planı"
+  ],
+  [
+    "ReconBot fallback response",
+    "ReconBot yedek yanıtı"
+  ],
+  [
+    "The model returned no usable answer; this response was generated from run artifacts.",
+    "Model kullanılabilir cevap üretmediği için bu yanıt mevcut run artifactlerinden oluşturuldu."
+  ],
+  [
+    "The model returned no usable answer; this response was generated from request and provider diagnostics.",
+    "Model kullanılabilir cevap üretmediği için bu yanıt son AI istek durumu ve provider tanısından oluşturuldu."
+  ],
+  [
+    "Option 1: LM Studio",
+    "Seçenek 1: LM Studio"
+  ],
+  [
+    "Option 2: OpenAI-compatible server",
+    "Seçenek 2: OpenAI uyumlu sunucu"
+  ],
+  [
+    "This model may be incompatible with ReconBot chat: it returns reasoning_content instead of final content. Choose an instruct model that returns final message.content. Keep Thinking/Reasoning disabled for Qwen reasoning models. This is a response-format issue, not a connection failure.",
+    "Bu model ReconBot chat için uyumsuz davranıyor olabilir: final content yerine reasoning_content üretiyor. Daha stabil kullanım için final message.content döndüren instruct model seç. Qwen reasoning modellerinde Thinking/Reasoning kapalı olmalı. LM Studio'da final content döndüren instruct model daha stabil çalışır. Bu bir bağlantı hatası değil; model cevap formatı uyumsuzluğu."
+  ],
+  [
+    "Lower values produce more consistent operator answers.",
+    "Düşük değer daha tutarlı operatör yanıtı üretir."
+  ],
+  [
+    "Operator timeout ceiling per provider attempt. Values such as 300 or 600 seconds are not silently reduced to 180. Technical details show the effective timeout.",
+    "Bu değer her provider denemesinin operatör tavanıdır; 300 veya 600 saniye gizlice 180'e düşürülmez. Etkili değer Teknik detaylarda görünür."
+  ],
+  [
+    "Artifact context limit. Technical details explain the injected amount based on profile, history and the loaded model context.",
+    "ReconBot artifact context tavanıdır. Etkili enjekte edilen miktar profil, geçmiş ve yüklü model penceresine göre Teknik detaylarda açıklanır."
+  ],
+  [
+    "When disabled, reasoning fields are omitted. When enabled, only fields explicitly supported by endpoint and model metadata are sent.",
+    "Kapalıyken reasoning alanı gönderilmez. Açıkken de yalnız endpoint ve model metadata'sı açıkça destek bildirirse desteklenen alan gönderilir."
+  ],
+  [
+    "Output token ceiling. The planner reduces it only for loaded context, provider capacity, input size or documented limits; the reason appears in Technical details.",
+    "Kullanıcı tavanıdır. Planner yalnız yüklü context, provider kapasitesi, input boyutu veya belgeli hard limit gerektiğinde düşürür ve nedeni Teknik detaylarda gösterir."
+  ],
+  [
+    "Shows the report-summary shortcut in the AI hub and includes the preference in future requests. Does not start inference automatically.",
+    "Hub içindeki 'özet çıkarabilirim' durumunu ve sonraki provider promptundaki report-ready tercihini değiştirir; kendi başına LLM çağrısı başlatmaz."
+  ],
+  [
+    "ReconBot Operator Console. AI cannot edit targets, risk scores, report artifacts or safety controls, or start scans.",
+    "ReconBot Operator Console · Build info moved from the sidebar AI hub. AI cannot change target, risk score, secrets, report artifacts, safety flags, or start scans."
+  ],
+  [
+    "Crawler depth and URL cap. Larger crawls increase runtime and duplicate/noisy URLs.",
+    "Keşif derinliği ve URL sınırı. Büyük taramalar süreyi ve tekrarlanan URL sayısını artırır."
+  ],
+  [
+    "Higher depth finds nested routes but grows crawl size.",
+    "Daha yüksek derinlik iç içe yolları bulur, ancak taramayı büyütür."
+  ],
+  [
+    "Longer waits tolerate slow pages but slow the run.",
+    "Uzun bekleme süreleri yavaş sayfalara izin verir, ancak taramayı uzatır."
+  ],
+  [
+    "Requests per second. Zero uses the traffic profile rate.",
+    "Saniyedeki istek sınırı. 0, trafik profilinin hızını kullanır."
+  ],
+  [
+    "Limits retained URLs; the scan may still send additional requests.",
+    "Saklanan URL sayısını sınırlar; bir tarama çağrısı içinde ek istekler olabilir."
+  ],
+  [
+    "Directory discovery. More threads and extensions multiply requests.",
+    "Dizin keşfi. İş parçacığı ve uzantı sayısı istekleri artırır."
+  ],
+  [
+    "Wordlist profile",
+    "Kelime listesi profili"
+  ],
+  [
+    "Higher threads speed discovery but increase traffic spikes.",
+    "Daha fazla iş parçacığı keşfi hızlandırır, ancak anlık trafiği artırır."
+  ],
+  [
+    "Low values miss slow endpoints; high values make dead paths slow.",
+    "Düşük değerler yavaş hedefleri kaçırır; yüksek değerler erişilemeyen yolları bekletir."
+  ],
+  [
+    "More extensions increase coverage but multiply requests.",
+    "Daha fazla uzantı kapsamı ve istek sayısını artırır."
+  ],
+  [
+    "Fuzzing limits. Keep rates moderate unless the scope explicitly allows noisy traffic.",
+    "Fuzzing sınırları. Kapsam yüksek trafiğe açıkça izin vermedikçe hızı ölçülü tutun."
+  ],
+  [
+    "High rates can trigger WAF/rate limits; low rates are safer but slow.",
+    "Yüksek hız WAF veya hız sınırını tetikleyebilir; düşük hız daha az trafikle çalışır."
+  ],
+  [
+    "Controls how long FFUF waits per response.",
+    "FFUF'un her yanıt için bekleme süresini belirler."
+  ],
+  [
+    "Too many results may indicate noisy matching or soft-error issues.",
+    "Çok fazla sonuç gürültülü eşleşmelere veya sahte hata sayfalarına işaret edebilir."
+  ],
+  [
+    "Lightweight HTTP page checks and evidence collection.",
+    "Hafif HTTP sayfa kontrolleri ve kanıt toplama."
+  ],
+  [
+    "Low may miss slow valid pages; high slows the whole scan.",
+    "Düşük süre yavaş geçerli sayfaları kaçırabilir; yüksek süre tüm taramayı yavaşlatır."
+  ],
+  [
+    "Limits downloaded and decoded response bytes.",
+    "İndirilen ve çözümlenen yanıt boyutunu sınırlar."
+  ],
+  [
+    "Visual evidence capture. More screenshots increase disk usage and runtime.",
+    "Görsel kanıt toplama. Daha fazla ekran görüntüsü disk kullanımını ve süreyi artırır."
+  ],
+  [
+    "Too low can capture blank/half-loaded pages; too high slows scans heavily.",
+    "Çok düşük süre boş veya yarım sayfa yakalayabilir; çok yüksek süre taramayı uzatır."
+  ],
+  [
+    "Controls visual evidence volume.",
+    "Görsel kanıt miktarını belirler."
+  ],
+  [
+    "Evidence-driven template scanning. Template names alone are not proof.",
+    "Kanıta dayalı şablon taraması. Şablon adı tek başına kanıt değildir."
+  ],
+  [
+    "Including info/low increases coverage but can add noise.",
+    "Bilgi ve düşük önem düzeyi kapsamı artırır, ancak gürültü ekleyebilir."
+  ],
+  [
+    "Cleaner report, but may miss context signals.",
+    "Daha kısa rapor üretir, ancak bağlam sinyallerini kaçırabilir."
+  ],
+  [
+    "Large template sets increase runtime and noisy findings.",
+    "Büyük şablon kümeleri süreyi ve gürültülü eşleşmeleri artırır."
+  ],
+  [
+    "High Nuclei rate increases traffic and may trigger WAF/rate limits.",
+    "Yüksek Nuclei hızı trafiği artırır, WAF veya hız sınırını tetikleyebilir."
+  ],
+  [
+    "Controls template wait time.",
+    "Şablon bekleme süresini belirler."
+  ],
+  [
+    "Limits scanned URLs, not the number of templates or findings.",
+    "Taranacak URL sayısını sınırlar; şablon veya bulgu sayısını sınırlamaz."
+  ],
+  [
+    "More service detail, slower and noisier.",
+    "Daha çok servis ayrıntısı; daha yavaş ve yoğun tarama."
+  ],
+  [
+    "Lower traffic, less service detail.",
+    "Daha düşük trafik, daha az servis ayrıntısı."
+  ],
+  [
+    "Top ports are fast and practical; full range is very slow/noisy.",
+    "Sık kullanılan portlar hızlıdır; tüm portlar çok yavaş ve yoğun olabilir."
+  ],
+  [
+    "Large timeouts can make dead hosts very slow.",
+    "Uzun zaman aşımı erişilemeyen hedeflerde taramayı uzatabilir."
+  ],
+  [
+    "Default preference only; choose whether to include OSINT for this run in Scan configuration.",
+    "Yalnızca varsayılan tercihi kontrol eder; bu run'a OSINT dahil olup olmayacağı Configure ekranında belirlenir."
+  ],
+  [
+    "safe_mvp only",
+    "yalnız safe_mvp"
+  ],
+  [
+    "Live passive CT metadata lookup; no subdomain probing.",
+    "Canlı pasif CT metadata lookup; subdomain probing yapılmaz."
+  ],
+  [
+    "HIBP-style public breach catalog metadata.",
+    "HIBP-style public ihlal kataloğu metadata'sı."
+  ],
+  [
+    "Live Wayback CDX metadata lookup; historical URLs are not fetched.",
+    "Canlı Wayback CDX metadata lookup; geçmiş URL'ler fetch edilmez."
+  ],
+  [
+    "Suggestions only",
+    "Sadece öneri"
+  ],
+  [
+    "Produces manual search URLs; no code scraping or secret validation.",
+    "Manuel arama URL'leri üretir; code scraping veya secret validation yapmaz."
+  ],
+  [
+    "Operator guidance only; ReconBot does not scrape search results.",
+    "Yalnızca operatör rehberliği üretir; ReconBot arama sonuçlarını scrape etmez."
+  ],
+  [
+    "Passive DNS/IP context and lookup shortcuts only.",
+    "Yalnızca pasif DNS/IP bağlamı ve lookup shortcut'ları."
+  ],
+  [
+    "Passive public organization context only.",
+    "Yalnızca pasif public organizasyon bağlamı."
+  ],
+  [
+    "Uses the live GitHub Search API for metadata when a token is configured; otherwise provides manual suggestions.",
+    "Token varsa canlı GitHub Search API metadata araması yapılır; token yoksa sadece manuel öneriler üretilir."
+  ],
+  [
+    "Secret-safe",
+    "Gizli değer içermeyen"
+  ],
+  [
+    "Wayback CDX metadata lookup.",
+    "Wayback CDX metadata sorgusu."
+  ],
+  [
+    "Low values may result in partial historical URL coverage.",
+    "Düşük değer kısmi tarihsel URL kapsamına yol açabilir."
+  ],
+  [
+    "Small bounded retries and backoff; avoids blocking the whole OSINT run.",
+    "Küçük bounded retry/backoff; tüm OSINT run'ını uzun süre bloklamaz."
+  ],
+  [
+    "Certificate Transparency metadata lookup without active probing.",
+    "Certificate Transparency metadata lookup; aktif probing yapmaz."
+  ],
+  [
+    "Low values may leave CT coverage partial.",
+    "Düşük değer CT kapsamını kısmi bırakabilir."
+  ],
+  [
+    "Small bounded retries and backoff; failures are recorded in source health.",
+    "Küçük bounded retry/backoff; başarısız olursa kaynak sağlığına yazılır."
+  ],
+  [
+    "Public breach catalog metadata only; no credentials or dumps collected.",
+    "Sadece herkese açık ihlal metadata kataloğu; credential/dump toplanmaz."
+  ],
+  [
+    "Reports metadata-only sources.",
+    "Yalnızca metadata-only kaynakları raporlar."
+  ],
+  [
+    "Local metadata-only JSON file; its content is not loaded into UI state.",
+    "Local metadata-only JSON dosyası. İçerik UI state içine yüklenmez."
+  ],
+  [
+    "Limits manual metadata import results.",
+    "Manuel metadata import sonucunu sınırlar."
+  ],
+  [
+    "Future provider profile. HTTPS URLs only; no live integration yet.",
+    "Provider profile placeholder. Yalnızca https:// URL kabul edilir; canlı entegrasyon yoktur."
+  ],
+  [
+    "Limit for future provider adapter results.",
+    "Gelecek provider adapter sonucu için sınır."
+  ],
+  [
+    "Timeout for a future HTTPS metadata provider.",
+    "Gelecek HTTPS metadata provider timeout değeri."
+  ],
+  [
+    "Signal cap controls report noise before suppression/deduplication.",
+    "Sinyal sınırı filtreleme ve tekrarları birleştirme öncesinde rapor yoğunluğunu belirler."
+  ],
+  [
+    "Low values may return partial context; high values may slow report generation.",
+    "Çok düşük değer kısmi bağlam döndürebilir; çok yüksek değer rapor üretimini yavaşlatabilir."
+  ],
+  [
+    "Passive public intelligence only. No credentials, marketplaces, login-required breach databases or exploit activity.",
+    "Yalnızca pasif public intelligence. Credential yok, marketplace yok, login-required breach DB yok, exploit aktivitesi yok."
+  ],
+  [
+    "ReconBot does not collect credentials, passwords, hashes, tokens, private keys, session cookies, raw dumps, raw paste content, personal records or raw leaked records.",
+    "ReconBot credential, password, hash, token, private key, session cookie, raw dump, paste raw content, personal record veya ham sızıntı kaydı toplamaz."
+  ],
+  [
+    "Disabled by default. Enable only for trusted normalized metadata feeds.",
+    "Varsayılan kapalı. Yalnızca güvenilir normalize metadata feed'leri için etkinleştir."
+  ],
+  [
+    "HTTPS JSON endpoint",
+    "HTTPS JSON adresi"
+  ],
+  [
+    "Timeout for reading HTTPS or local feeds.",
+    "HTTPS/local feed okuma timeout değeri."
+  ],
+  [
+    "Limits metadata references written to the report from this feed.",
+    "Bu feed'den rapora yazılacak metadata referanslarını sınırlar."
+  ],
+  [
+    "Recommended: {value}.",
+    "Önerilen: {value}."
+  ],
+  [
+    "On",
+    "açık"
+  ],
+  [
+    "Off",
+    "kapalı"
+  ],
+  [
+    "Memory approx",
+    "Yaklaşık bellek"
+  ],
+  [
+    "sample delta",
+    "örnek farkı"
+  ],
+  [
+    "rx/tx if available",
+    "varsa gelen/giden"
+  ],
+  [
+    "Standby",
+    "standby"
+  ],
+  [
+    "Live",
+    "Canlı",
+    "canli",
+    "canlı"
+  ],
+  [
+    "Visual severity summary",
+    "visual severity filters"
+  ],
+  [
+    "Questions ready · Send to confirm",
+    "Soru hazırlandı · Gönder ile onayla"
+  ],
+  [
+    "Preparing request",
+    "İstek hazırlanıyor"
+  ],
+  [
+    "Waiting for the model",
+    "Model bekleniyor"
+  ],
+  [
+    "Validating answer",
+    "Yanıt doğrulanıyor"
+  ],
+  [
+    "Repairing answer",
+    "Yanıt düzeltiliyor"
+  ],
+  [
+    "Cancelled",
+    "İptal edildi"
+  ],
+  [
+    "No usable answer",
+    "Model kullanılabilir yanıt üretemedi"
+  ],
+  [
+    "Summarize this report as a short operator briefing",
+    "Bu raporu kısa bir operatör brifingi olarak özetle"
+  ],
+  [
+    "Why is source health low?",
+    "Source health neden düşük?"
+  ],
+  [
+    "Suggest lower-traffic settings",
+    "Daha düşük trafikli ayar öner"
+  ],
+  [
+    "Explain this report briefly using the current run context. Use natural prose, avoid repetitive templates and do not add an evidence block.",
+    "Mevcut run contextine göre bu raporu kısa ve doğal biçimde açıkla. Tekrarlayan şablon kullanma; kanıt bloğu ekleme."
+  ],
+  [
+    "Interpret important errors and timeouts in the logs.",
+    "Loglardaki önemli hata ve timeoutları yorumla."
+  ],
+  [
+    "What is the next safe operator step for this run?",
+    "Bu run için sonraki güvenli operatör adımı ne olmalı?"
+  ],
+  [
+    "Suggest lower-traffic settings based on the current scan profile and traffic settings. Do not write a general report summary.",
+    "Mevcut scan profile ve traffic-related ayarlara göre daha düşük trafikli ayar öner. Genel rapor özeti yazma."
+  ],
+  [
+    "Can I trust this report? Explain coverage, limitations and concise evidence.",
+    "Bu rapora güvenebilir miyim? Kapsam, limitler ve kısa kanıtla açıkla."
+  ],
+  [
+    "Review the logs and troubleshoot any partial scan.",
+    "Logları incele ve partial scan varsa troubleshoot et."
+  ],
+  [
+    "Suggest slower, lower-traffic scan settings.",
+    "Daha yavaş ama daha güvenli ve düşük trafikli tarama ayarı öner."
+  ],
+  [
+    "Explain this report. Distinguish important findings, source coverage and uncertain conclusions.",
+    "Bu raporu AI ile açıkla. Önemli bulguları, kaynak kapsamını ve kesin olmayan noktaları ayır."
+  ],
+  [
+    "Is this result reliable? Explain partial coverage, source health and false-positive risk.",
+    "Bu sonuç güvenilir mi? Partial coverage, source health ve false-positive riskini açıkla."
+  ],
+  [
+    "Is this finding real? Evaluate only the evidence in the current report.",
+    "Bu bulgu gerçek mi? Yalnız mevcut rapor kanıtlarına göre değerlendir."
+  ],
+  [
+    "What should the next safe operator step be based on this report?",
+    "Bu rapora göre sonraki güvenli operatör adımı ne olmalı?"
+  ],
+  [
+    "No AI status check yet.",
+    "AI durumu henüz kontrol edilmedi."
+  ],
+  [
+    "Use Test connection to check the status.",
+    "Bağlantıyı Test Et butonu ile durumu kontrol et."
+  ],
+  [
+    "Chat is available.",
+    "Chat is available."
+  ],
+  [
+    "No single backend global timeout exists yet. Per-tool timeouts below are written to generated config where supported.",
+    "Tek bir genel backend zaman aşımı yoktur. Desteklenen araçlara aşağıdaki süreler yazılır."
+  ],
+  [
+    "No run-wide max runtime field exists yet. Keep high per-tool timeouts conservative to avoid long hangs.",
+    "Tarama geneli için süre sınırı yoktur. Uzun beklemelerden kaçınmak için araç sürelerini ölçülü tutun."
+  ],
+  [
+    "Use Gobuster threads, FFUF rate, and Nuclei rate below. Higher values increase traffic/noise and may trigger WAFs.",
+    "Aşağıdaki Gobuster, FFUF ve Nuclei hızlarını kullanın. Yüksek değerler trafiği artırır, WAF tetikleyebilir."
+  ],
+  [
+    "Config only",
+    "Yalnız yapılandırma"
+  ],
+  [
+    "Locked",
+    "Kilitli"
+  ],
+  [
+    "May miss",
+    "Kaçırabilir"
+  ],
+  [
+    "Noisy",
+    "Yoğun"
+  ],
+  [
+    "High traffic",
+    "Yüksek trafik"
+  ],
+  [
+    "Chat unavailable",
+    "Chat kullanılamıyor",
+    " · chat uyumsuz"
+  ],
+  [
+    "seconds",
+    "saniye",
+    "sn"
+  ],
+  [
+    "entries",
+    "kayıt",
+    "ev"
+  ],
+  [
+    "OpenAI-compatible local endpoint.",
+    "OpenAI uyumlu yerel sunucu."
+  ],
+  [
+    "{count} available",
+    "{count} mevcut"
+  ],
+  [
+    "Normal Scan",
+    "Normal Tarama"
+  ],
+  [
+    "OSINT Only",
+    "Yalnızca OSINT"
+  ],
+  [
+    "Scan + OSINT",
+    "Tarama + OSINT"
+  ],
+  [
+    "Existing active scanner flow only. OSINT is not included.",
+    "Yalnızca mevcut aktif tarama akışı çalışır. OSINT dahil değildir."
+  ],
+  [
+    "Active scanners will be skipped. Passive public OSINT sources will run.",
+    "Aktif tarama araçları atlanır. Herkese açık pasif OSINT kaynakları çalışır."
+  ],
+  [
+    "Selected scan tools run first, then passive OSINT context is attached.",
+    "Önce seçilen tarama araçları çalışır, ardından pasif OSINT bağlamı eklenir."
+  ],
+  [
+    "No single backend global timeout exists yet. Per-tool timeouts below are written to generated config where supported.",
+    "Henüz tüm araçlara uygulanan ortak bir zaman aşımı yok. Desteklenen araçların zaman aşımı değerleri aşağıdaki ayarlardan alınır."
+  ],
+  [
+    "No run-wide max runtime field exists yet. Keep high per-tool timeouts conservative to avoid long hangs.",
+    "Henüz taramanın tamamına uygulanan bir süre sınırı yok. Uzun beklemeleri önlemek için araçların zaman aşımı değerlerini makul tutun."
+  ],
+  [
+    "Use Gobuster threads, FFUF rate, and Nuclei rate below. Higher values increase traffic/noise and may trigger WAFs.",
+    "Aşağıdaki Gobuster iş parçacığı, FFUF hız ve Nuclei hız ayarlarını kullanın. Yüksek değerler trafiği artırabilir ve WAF tetikleyebilir."
+  ],
+  [
+    "LM Studio / llama.cpp endpoint. Default http://127.0.0.1:1234/v1",
+    "LM Studio / llama.cpp sunucusu. Varsayılan: http://127.0.0.1:1234/v1"
+  ],
+  [
+    "OpenAI-compatible endpoints usually end with /v1. ReconBot will use {url}.",
+    "OpenAI uyumlu sunucu adresleri genellikle /v1 ile biter. ReconBot {url} adresini kullanacak."
+  ],
+  [
+    "Model is generating a response",
+    "Model yanıt üretiyor"
+  ],
+  [
+    "Preparing request",
+    "İstek hazırlanıyor"
+  ],
+  [
+    "Validating response",
+    "Yanıt doğruluk ve kalite denetiminde"
+  ],
+  [
+    "Repairing response",
+    "Yanıt düzeltiliyor"
+  ],
+  [
+    "Response complete",
+    "Yanıt tamamlandı"
+  ],
+  [
+    "Request cancelled",
+    "İstek iptal edildi"
+  ],
+  [
+    "Context limit exceeded",
+    "Bağlam sınırı aşıldı"
+  ],
+  [
+    "The model did not produce a usable response",
+    "Model kullanılabilir yanıt üretemedi"
+  ],
+  [
+    " · attempt {count}",
+    " · {count}. deneme"
+  ],
+  [
+    "{done}/{total} tools",
+    "{done}/{total} araç"
+  ],
+  [
+    "Review now",
+    "İncele",
+    "review now"
+  ],
+  [
+    "Chat is available.",
+    "Sohbet kullanılabilir."
+  ],
+  [
+    "Network",
+    "Ağ"
+  ],
+  [
+    "Settings",
+    "Ayarlar"
+  ],
+  [
+    "{count} signals · risk {risk}",
+    "{count} sinyal · risk {risk}"
+  ],
+  [
+    "partial",
+    "kısmi"
+  ],
+  [
+    "none",
+    "yok"
+  ],
+  [
+    "Recon",
+    "Ön keşif"
+  ],
+  [
+    "Report generation failed: {detail}",
+    "Rapor üretilemedi: {detail}"
+  ],
+  [
+    "Run exists but report.html is missing: {path}",
+    "Tarama kaydı mevcut ancak report.html eksik: {path}"
+  ],
+  [
+    "Report loaded: {path}",
+    "Rapor yüklendi: {path}"
+  ],
+  [
+    "Report load failed: {detail}",
+    "Rapor yüklenemedi: {detail}"
+  ],
+  [
+    "Report found: {path}",
+    "Rapor bulundu: {path}"
+  ],
+  [
+    "History loaded: {target}",
+    "Geçmiş tarama yüklendi: {target}"
+  ],
+  [
+    "Could not load historical scan: {detail}",
+    "Geçmiş tarama yüklenemedi: {detail}"
+  ],
+  [
+    "Target ready for a new scan: {target}",
+    "Hedef yeniden tarama için hazırlandı: {target}"
+  ],
+  [
+    "Could not load configuration defaults: {detail}",
+    "Varsayılan ayarlar yüklenemedi: {detail}"
+  ],
+  [
+    "Could not refresh run state; the last valid snapshot is retained: {detail}",
+    "Tarama durumu yenilenemedi; son geçerli görünüm korunuyor: {detail}"
+  ],
+  [
+    "Rescan target",
+    "Hedefi yeniden tara"
+  ],
+  [
+    "Evidence graph",
+    "Kanıt grafiği"
+  ],
+  [
+    "Evidence links",
+    "Kanıt ilişkileri"
+  ],
+  [
+    "Scanner matches",
+    "Tarayıcı eşleşmeleri"
+  ],
+  [
+    "Source workflow",
+    "Kaynak akışı"
+  ],
+  [
+    "Template matches",
+    "Şablon eşleşmeleri"
+  ],
+  [
+    "Target scope",
+    "Hedef kapsamı"
+  ],
+  [
+    "Risk context",
+    "Risk bağlamı"
+  ],
+  [
+    "Tools completed",
+    "Tamamlanan araçlar"
+  ],
+  [
+    "{done}/{total} completed",
+    "{done}/{total} tamamlandı"
+  ],
+  [
+    "{count} skipped",
+    "{count} atlandı"
+  ],
+  [
+    "Not recorded",
+    "Kaydedilmedi"
+  ],
+  [
+    "No stage status was recorded.",
+    "Aşama durumu kaydedilmedi."
+  ],
+  [
+    "Completed tools only; skipped tools are excluded. This is not a time estimate.",
+    "Yalnız tamamlanan araçlar; atlanan araçlar hariç. Süre tahmini değildir."
+  ],
+  [
+    "Scanner → recorded endpoint → template match. Links do not prove exploitation.",
+    "Tarayıcı → kayıtlı adres → şablon eşleşmesi. Bağlantılar istismar kanıtı değildir."
+  ],
+  [
+    "Source workflow and observed signals. Links describe the workflow, not a confirmed attack path.",
+    "Kaynak akışı ve gözlenen sinyaller. Bağlantılar iş akışını gösterir; doğrulanmış saldırı yolu değildir."
+  ],
+  [
+    "No evidence linked to this node for the selected filter.",
+    "Seçili filtrede bu düğüme bağlı kanıt yok."
+  ],
+  [
+    "Previous matches",
+    "Önceki eşleşmeler"
+  ],
+  [
+    "Next matches",
+    "Sonraki eşleşmeler"
+  ],
+  [
+    "Zoom out",
+    "Uzaklaştır"
+  ],
+  [
+    "Zoom in",
+    "Yakınlaştır"
+  ],
+  [
+    "Reset graph position",
+    "Grafik konumunu sıfırla"
+  ],
+  [
+    "Pause graph motion",
+    "Grafik hareketini durdur"
+  ],
+  [
+    "Resume graph motion",
+    "Grafik hareketini sürdür"
+  ],
+  [
+    "Interactive evidence graph",
+    "Etkileşimli kanıt grafiği"
+  ],
+  [
+    "Drag nodes or background · Scroll to zoom · Enter to inspect",
+    "Düğümleri veya zemini sürükle · Kaydırarak yakınlaştır · Enter ile incele"
+  ],
+  [
+    "Recorded scanner association",
+    "Kayıtlı tarayıcı ilişkisi"
+  ],
+  [
+    "Workflow relation; not proof of exploitation",
+    "İş akışı ilişkisi; istismar kanıtı değil"
+  ],
+  [
+    "Evidence graph preview",
+    "Kanıt grafiği önizlemesi"
+  ],
+  [
+    "Sources",
+    "Kaynaklar"
+  ],
+  [
+    "Select a finding to inspect its evidence links.",
+    "Kanıt ilişkilerini incelemek için bir bulgu seç."
+  ],
+  [
+    "Evidence links will appear when scan results arrive.",
+    "Tarama sonuçları geldikçe kanıt ilişkileri görünür."
+  ],
+  [
+    "Scanner matches require independent validation.",
+    "Tarayıcı eşleşmeleri bağımsız doğrulama gerektirir."
+  ],
+  [
+    "This endpoint was recorded by the scanner; exploitability is not implied.",
+    "Bu adres tarayıcı tarafından kaydedildi; istismar edilebilir olduğu anlamına gelmez."
+  ],
+  [
+    "Explicit validation evidence is recorded.",
+    "Açık doğrulama kanıtı kaydedilmiş."
+  ],
+  [
+    "Unconfirmed scanner match; validate the recorded evidence.",
+    "Doğrulanmamış tarayıcı eşleşmesi; kayıtlı kanıtı doğrula."
+  ],
+  [
+    "Recorded target scope; this does not prove initial access.",
+    "Kayıtlı hedef kapsamı; ilk erişimin sağlandığını kanıtlamaz."
+  ],
+  [
+    "Done",
+    "Tamamlandı",
+    "done"
+  ],
+  [
+    "Error",
+    "Hata",
+    "error"
+  ],
+  [
+    "Confirmed",
+    "Doğrulandı",
+    "confirmed"
+  ],
+  [
+    "{count} matches",
+    "{count} eşleşme"
+  ],
+  [
+    "{count} tools",
+    "{count} araç"
+  ],
+  [
+    "{count} URLs",
+    "{count} URL"
+  ],
+  [
+    "{count} checks",
+    "{count} kontrol"
+  ],
+  [
+    "{count} hits",
+    "{count} eşleşme"
+  ],
+  [
+    "{count} screenshots",
+    "{count} ekran görüntüsü"
+  ],
+  [
+    "{count} findings",
+    "{count} bulgu"
+  ],
+  [
+    "Completed recorded tools only; skipped and unrecorded tools are excluded. This is not a time estimate.",
+    "Yalnızca kaydı bulunan araçların tamamlanma sayısıdır; atlanan ve kaydı olmayan araçlar hariçtir. Süre tahmini değildir."
+  ],
+  [
+    "Signals",
+    "Sinyaller"
+  ],
+  [
+    "Matches",
+    "Eşleşmeler"
+  ],
+  [
+    "Security template evidence requires operator validation.",
+    "Güvenlik şablonu eşleşmesi operatör doğrulaması gerektirir."
+  ],
+  [
+    "Validate exploitability and affected endpoint scope.",
+    "İstismar edilebilirliği ve etkilenen adresin kapsamını doğrulayın."
+  ],
+  [
+    "Following run: {path}",
+    "İzlenen tarama: {path}"
+  ],
+  [
+    "Selected checks did not finish:",
+    "Seçilen kontroller tamamlanamadı:"
+  ],
+  [
+    "Completion details",
+    "Tamamlanma ayrıntıları"
+  ],
+  [
+    "Outside this scan's selected scope",
+    "Bu taramanın seçilen kapsamı dışında"
+  ],
+  [
+    "Disabled or inapplicable checks are not failures. Results apply to the selected checks; no matches do not prove the target has no vulnerabilities.",
+    "Kapalı veya hedefe uygun olmayan kontroller hata değildir. Sonuçlar seçilen kontroller için geçerlidir; eşleşme olmaması hedefte zafiyet bulunmadığını kanıtlamaz."
+  ],
+  [
+    "Scan network",
+    "Tarama ağı"
+  ],
+  [
+    "Recorded URLs, sources and findings. Connections show evidence associations, not proven exploitation.",
+    "Kaydedilen URL’ler, kaynaklar ve bulgular. Bağlantılar kanıt ilişkilerini gösterir; doğrulanmış istismar değildir."
+  ],
+  [
+    "Graph settings",
+    "Grafik ayarları"
+  ],
+  [
+    "Search nodes",
+    "Düğüm ara"
+  ],
+  [
+    "Repulsion",
+    "İtme kuvveti"
+  ],
+  [
+    "Link distance",
+    "Bağlantı uzunluğu"
+  ],
+  [
+    "Show all labels",
+    "Tüm etiketleri göster"
+  ],
+  [
+    "nodes",
+    "düğüm"
+  ],
+  [
+    "links",
+    "bağlantı"
+  ],
+  [
+    "additional records not displayed",
+    "ek kayıt gösterilmedi"
+  ],
+  [
+    "Recorded scan association; this link does not prove exploitation.",
+    "Kaydedilen tarama ilişkisi; bu bağlantı istismarı kanıtlamaz."
+  ],
+  [
+    "sources",
+    "kaynak"
+  ],
+  [
+    "Finding focus",
+    "Bulgu odaklı"
+  ],
+  [
+    "All discovery data",
+    "Tüm keşif verileri"
+  ],
+  [
+    "Findings and linked addresses. Open a URL group to explore discovery data.",
+    "Bulgular ve ilişkili adresler. Keşif verilerini incelemek için adres kümesini açın."
+  ],
+  [
+    "{count} discovery URLs",
+    "{count} keşif adresi"
+  ],
+  [
+    "{count} discovery URLs grouped",
+    "{count} keşif adresi kümelendi"
+  ],
+  [
+    "Discovery URLs without linked findings. Expand to inspect recorded addresses.",
+    "Bulguya bağlı olmayan keşif adresleri. Kayıtlı adresleri incelemek için kümeyi açın."
+  ],
+  [
+    "Expand URLs",
+    "Adresleri aç"
+  ],
+  [
+    "Collapse URLs",
+    "Adresleri kapat"
+  ],
+  [
+    "{count} more findings",
+    "{count} ek bulgu"
+  ],
+  [
+    "Additional findings grouped by source. Expand to inspect each finding.",
+    "Diğer bulgular kaynağa göre kümelendi. Her birini incelemek için kümeyi açın."
+  ],
+  [
+    "Expand findings",
+    "Bulguları aç"
+  ],
+  [
+    "Collapse findings",
+    "Bulguları kapat"
+  ],
+  [
+    "Show all findings",
+    "Tüm bulguları göster"
+  ],
+  [
+    "Show on graph",
+    "Grafikte göster"
+  ],
+  [
+    "Copy URL",
+    "Adresi kopyala"
+  ],
+  [
+    "Could not copy URL. Try again.",
+    "Adres kopyalanamadı. Tekrar deneyin."
+  ],
+  [
+    "Discovery addresses",
+    "Keşif adresleri"
+  ],
+  [
+    "Recorded address",
+    "Kayıtlı adres"
+  ],
+  [
+    "Click + to expand a group. Read its addresses or findings in the right panel.",
+    "Kümeyi açmak için + simgesine tıklayın. Adresleri veya bulguları sağ panelde inceleyin."
+  ],
+  [
+    "Zoom sensitivity",
+    "Yakınlaştırma hassasiyeti"
+  ],
+  [
+    "SQLmap available",
+    "SQLmap hazır"
+  ],
+  [
+    "SQLmap not installed",
+    "SQLmap kurulu değil"
+  ],
+  [
+    "Checking…",
+    "Kontrol ediliyor…"
+  ],
+  [
+    "Test one selected parameter for SQL injection. Results are saved with this scan; its original score stays unchanged.",
+    "Seçtiğin parametrede SQL enjeksiyonunu test et. Sonuçlar bu taramaya kaydedilir; özgün risk skoru değişmez."
+  ],
+  [
+    "Select a scan from Artifacts before starting validation.",
+    "Doğrulama başlatmadan önce Dosyalar ekranından bir tarama seç."
+  ],
+  [
+    "Install SQLmap on your system and restart ReconBot. macOS: brew install sqlmap · Debian/Ubuntu: sudo apt install sqlmap",
+    "SQLmap’i sistemine kurup ReconBot’u yeniden aç. macOS: brew install sqlmap · Debian/Ubuntu: sudo apt install sqlmap"
+  ],
+  [
+    "Running validation",
+    "Doğrulama çalışıyor"
+  ],
+  [
+    "This job belongs to another scan.",
+    "Bu iş başka bir taramaya ait."
+  ],
+  [
+    "Stop SQLmap",
+    "SQLmap’i durdur"
+  ],
+  [
+    "URL to validate",
+    "Doğrulanacak URL"
+  ],
+  [
+    "Parameter",
+    "Parametre"
+  ],
+  [
+    "Method",
+    "Yöntem"
+  ],
+  [
+    "Form-encoded POST body",
+    "Form biçimindeki POST gövdesi"
+  ],
+  [
+    "Session and test settings",
+    "Oturum ve test ayarları"
+  ],
+  [
+    "Level",
+    "Seviye"
+  ],
+  [
+    "Time limit (seconds)",
+    "Toplam süre sınırı (saniye)"
+  ],
+  [
+    "Request timeout (seconds)",
+    "İstek zaman aşımı (saniye)"
+  ],
+  [
+    "Concurrent requests",
+    "Eşzamanlı istekler"
+  ],
+  [
+    "Request delay (seconds)",
+    "İstekler arası bekleme (saniye)"
+  ],
+  [
+    "Detection only: boolean, error and UNION techniques. No database dump or shell. Level 1 / risk 1 is the default.",
+    "Yalnızca tespit: boolean, hata ve UNION teknikleri. Veritabanı dökümü veya shell çalıştırılmaz. Varsayılan seviye 1 / risk 1."
+  ],
+  [
+    "Start SQLmap validation",
+    "SQLmap doğrulamasını başlat"
+  ],
+  [
+    "Validation evidence",
+    "Doğrulama kanıtı"
+  ],
+  [
+    "jobs",
+    "iş"
+  ],
+  [
+    "No SQLmap jobs for this scan yet.",
+    "Bu tarama için henüz SQLmap işi yok."
+  ],
+  [
+    "Validation history",
+    "Doğrulama geçmişi"
+  ],
+  [
+    "Injection detected",
+    "Enjeksiyon tespit edildi"
+  ],
+  [
+    "Not detected within tested scope",
+    "Test edilen kapsamda tespit edilmedi"
+  ],
+  [
+    "Inconclusive",
+    "Sonuç belirsiz"
+  ],
+  [
+    "Time limit reached",
+    "Süre sınırına ulaşıldı"
+  ],
+  [
+    "A negative result applies only to this parameter and tested techniques. Incomplete jobs cannot establish a clean result.",
+    "Olumsuz sonuç yalnızca bu parametre ve test edilen teknikler için geçerlidir. Eksik işler temiz sonuç göstermez."
+  ],
+  [
+    "Open validation report",
+    "Doğrulama raporunu aç"
+  ],
+  [
+    "Open evidence folder",
+    "Kanıt klasörünü aç"
+  ],
+  [
+    "Live SQLmap output",
+    "Canlı SQLmap çıktısı"
+  ],
+  [
+    "Follow output",
+    "Çıktıyı takip et"
+  ],
+  [
+    "Output will appear when validation starts.",
+    "Doğrulama başlayınca çıktı burada görünür."
+  ],
+  [
+    "Shows the latest 64 KB of output. Complete logs are kept in the evidence folder.",
+    "Çıktının son 64 KB’ı gösterilir. Tam günlükler kanıt klasöründe tutulur."
+  ],
+  [
+    "Validate with SQLmap",
+    "SQLmap ile doğrula"
+  ],
+  [
+    "SQLmap evidence",
+    "SQLmap kanıtları"
+  ],
+  [
+    "SQLmap validation started.",
+    "SQLmap doğrulaması başladı."
+  ],
+  [
+    "SQLmap validation stopped.",
+    "SQLmap doğrulaması durduruldu."
+  ],
+  [
+    "Enter one parameter name (for example id).",
+    "Tek bir parametre adı gir (örneğin id)."
+  ],
+  [
+    "The selected parameter must occur in the URL query or form-encoded POST body.",
+    "Seçilen parametre URL sorgusunda veya form biçimindeki POST gövdesinde bulunmalı."
+  ],
+  [
+    "The validation URL must belong to the selected scan target (same host and port).",
+    "Doğrulama URL’si seçilen tarama hedefine ait olmalı (aynı sunucu ve port)."
+  ],
+  [
+    "SQLmap is not installed or is not on PATH. Install SQLmap and restart ReconBot.",
+    "SQLmap kurulu değil veya PATH üzerinde bulunamadı. SQLmap’i kurup ReconBot’u yeniden aç."
+  ],
+  [
+    "The previous validation stopped without a final result.",
+    "Önceki doğrulama nihai sonuç üretmeden durdu."
+  ],
+  [
+    "Browse",
+    "Dosya seç"
+  ],
+  [
+    "Save and lock",
+    "Kaydet ve kilitle"
+  ],
+  [
+    "Unlock path",
+    "Kilidi aç"
+  ],
+  [
+    "Saved path · locked",
+    "Kaydedilen yol · kilitli"
+  ],
+  [
+    "Saved paths are reused when ReconBot restarts.",
+    "Kaydedilen yollar ReconBot yeniden açıldığında kullanılır."
+  ],
+  [
+    "Saved for future sessions.",
+    "Sonraki oturumlar için kaydedildi."
+  ],
+  [
+    "Unlocked. Choose a file, then save and lock it.",
+    "Kilit açıldı. Dosyayı seçip kaydet ve kilitle."
+  ],
+  [
+    "The saved wordlist is unavailable. Unlock it to choose another file.",
+    "Kaydedilen wordlist bulunamıyor. Başka dosya seçmek için kilidi aç."
+  ],
+  [
+    "The wordlist file does not exist or cannot be read.",
+    "Wordlist dosyası bulunamadı veya okunamıyor."
+  ],
+  [
+    "Unlock the saved wordlist before changing its path.",
+    "Yolu değiştirmeden önce wordlist kilidini aç."
+  ],
+  [
+    "Enter a readable wordlist file path.",
+    "Okunabilir bir wordlist dosyasının yolunu gir."
+  ],
+  [
+    "Could not save wordlist preference.",
+    "Wordlist tercihi kaydedilemedi."
+  ],
+  [
+    "Authentication",
+    "Giriş Testi"
+  ],
+  [
+    "Authentication Testing",
+    "Kimlik Doğrulama Testi"
+  ],
+  [
+    "Login testing",
+    "Giriş denemeleri"
+  ],
+  [
+    "Login URL",
+    "Giriş URL’si"
+  ],
+  [
+    "Authentication method",
+    "Giriş yöntemi"
+  ],
+  [
+    "Login form (POST)",
+    "Giriş formu (POST)"
+  ],
+  [
+    "Username source",
+    "Kullanıcı adı kaynağı"
+  ],
+  [
+    "Single username",
+    "Tek kullanıcı adı"
+  ],
+  [
+    "Username wordlist",
+    "Kullanıcı adı wordlist’i"
+  ],
+  [
+    "Password wordlist",
+    "Şifre wordlist’i"
+  ],
+  [
+    "Username",
+    "Kullanıcı adı"
+  ],
+  [
+    "Password",
+    "Şifre"
+  ],
+  [
+    "Username field name",
+    "Kullanıcı adı alanının adı"
+  ],
+  [
+    "Password field name",
+    "Şifre alanının adı"
+  ],
+  [
+    "Additional form values",
+    "Ek form değerleri"
+  ],
+  [
+    "Success criterion",
+    "Başarı ölçütü"
+  ],
+  [
+    "Response contains text",
+    "Yanıtta metin bulunması"
+  ],
+  [
+    "Exact redirect address",
+    "Tam yönlendirme adresi"
+  ],
+  [
+    "Success value",
+    "Başarı değeri"
+  ],
+  [
+    "Failed login text",
+    "Başarısız giriş metni"
+  ],
+  [
+    "Lockout text",
+    "Hesap kilidi metni"
+  ],
+  [
+    "Attempt limits",
+    "Deneme sınırları"
+  ],
+  [
+    "Maximum credential attempts",
+    "En fazla giriş denemesi"
+  ],
+  [
+    "Start authentication test",
+    "Giriş testini başlat"
+  ],
+  [
+    "Stop authentication test",
+    "Giriş testini durdur"
+  ],
+  [
+    "Running authentication test",
+    "Giriş testi çalışıyor"
+  ],
+  [
+    "Authentication evidence",
+    "Giriş testi kanıtı"
+  ],
+  [
+    "Authentication history",
+    "Giriş testi geçmişi"
+  ],
+  [
+    "No authentication tests for this scan yet.",
+    "Bu taramaya ait giriş testi henüz yok."
+  ],
+  [
+    "Open authentication report",
+    "Giriş testi raporunu aç"
+  ],
+  [
+    "Live authentication output",
+    "Canlı giriş testi çıktısı"
+  ],
+  [
+    "Credentials accepted",
+    "Giriş bilgileri kabul edildi",
+    "accepted"
+  ],
+  [
+    "Tested pairs rejected",
+    "Denenen giriş bilgileri reddedildi"
+  ],
+  [
+    "Attempt limit reached",
+    "Deneme sınırına ulaşıldı"
+  ],
+  [
+    "Rate limit or lockout detected",
+    "Hız sınırı veya hesap kilidi tespit edildi"
+  ],
+  [
+    "credential pairs",
+    "giriş bilgisi çifti"
+  ],
+  [
+    "baseline requests",
+    "başlangıç kontrolü"
+  ],
+  [
+    "(empty username)",
+    "(boş kullanıcı adı)"
+  ],
+  [
+    "(empty password)",
+    "(boş şifre)"
+  ],
+  [
+    "Test selected credential lists against one login endpoint. The original scan score stays unchanged.",
+    "Seçtiğin giriş bilgisi listelerini tek bir giriş adresinde dene. Ana taramanın risk skoru değişmez."
+  ],
+  [
+    "POST forms use URL-encoded fields and fixed extra values. Dynamic CSRF, JavaScript login, MFA and SSO flows are not supported in this version.",
+    "POST formları URL-encoded alanlar ve sabit ek değerler kullanır. Bu sürüm dinamik CSRF, JavaScript girişleri, MFA ve SSO akışlarını desteklemez."
+  ],
+  [
+    "One baseline request, then sequential credential attempts. Stops on success, rate limiting, the configured lockout text or ambiguous responses. Redirects are inspected without following them.",
+    "Bir başlangıç kontrolünden sonra giriş bilgileri sırayla denenir. Başarı, hız sınırı, belirlediğin kilit metni veya belirsiz yanıt görülünce durur. Yönlendirmeler takip edilmeden incelenir."
+  ],
+  [
+    "Showing the latest 100 attempts. The report retains all attempts.",
+    "Son 100 deneme gösteriliyor. Raporda tüm denemeler bulunur."
+  ],
+  [
+    "Authentication testing started.",
+    "Giriş testi başlatıldı."
+  ],
+  [
+    "Authentication testing stopped.",
+    "Giriş testi durduruldu."
+  ],
+  [
+    "Choose a username and password wordlist.",
+    "Kullanıcı adı ve şifre wordlist’ini seç."
+  ],
+  [
+    "Set explicit success and failure indicators for the login form.",
+    "Giriş formu için açık başarı ve başarısızlık ölçütleri gir."
+  ],
+  [
+    "All selected credential pairs were rejected.",
+    "Seçilen tüm giriş bilgisi çiftleri reddedildi."
+  ],
+  [
+    "Attempt limit reached; remaining pairs were not tested.",
+    "Deneme sınırına ulaşıldı; kalan çiftler denenmedi."
+  ],
+  [
+    "Rate limit or configured lockout indicator detected; stopped.",
+    "Hız sınırı veya belirlenen hesap kilidi işareti tespit edildi; test durduruldu."
+  ],
+  [
+    "Success/failure indicators did not distinguish this response.",
+    "Başarı/başarısızlık ölçütleri bu yanıtı ayırt edemedi."
+  ],
+  [
+    "The endpoint did not establish an unambiguous failed-login baseline. No wordlist attempts were sent.",
+    "Adres açık bir başarısız giriş yanıtı üretmedi. Wordlist denemeleri gönderilmedi."
+  ],
+  [
+    "Authentication testing cancelled; completed evidence retained.",
+    "Giriş testi iptal edildi; tamamlanan denemelerin kanıtları korundu."
+  ],
+  [
+    "Time limit reached; completed evidence retained.",
+    "Süre sınırına ulaşıldı; tamamlanan denemelerin kanıtları korundu."
+  ],
+  [
+    "The configured failure indicator matched.",
+    "Belirlenen başarısızlık ölçütü eşleşti."
+  ],
+  [
+    "The configured success indicator matched without the failure indicator.",
+    "Başarısızlık ölçütü olmadan başarı ölçütü eşleşti."
+  ],
+  [
+    "HTTP 401 challenge.",
+    "HTTP 401 giriş isteği."
+  ],
+  [
+    "Successful HTTP response after a verified Basic challenge.",
+    "Doğrulanan Basic giriş isteğinden sonra başarılı HTTP yanıtı."
+  ],
+  [
+    "The endpoint returned an unexpected HTTP response.",
+    "Adres beklenmeyen bir HTTP yanıtı döndürdü."
+  ],
+  [
+    "Accepted credentials",
+    "Kabul edilen giriş bilgileri"
+  ],
+  [
+    "See failed attempts",
+    "Başarısız denemeleri göster"
+  ],
+  [
+    "Hide failed attempts",
+    "Başarısız denemeleri gizle"
+  ],
+  [
+    "Other outcomes",
+    "Diğer sonuçlar"
+  ],
+  [
+    "Failed attempts pages",
+    "Başarısız deneme sayfaları"
+  ],
+  [
+    "Previous",
+    "Önceki"
+  ],
+  [
+    "Next",
+    "Sonraki"
+  ],
+  [
+    "Page {page} of {pages}",
+    "Sayfa {page} / {pages}"
+  ],
+  [
+    "UTF-8 wordlists: up to 16 MB and 10000 unique entries per file. Stops at the first accepted pair.",
+    "UTF-8 wordlist: dosya başına en fazla 16 MB ve 10000 benzersiz kayıt. İlk kabul edilen çiftte durur."
+  ],
+  [
+    "Automatic response comparison",
+    "Otomatik yanıt karşılaştırma"
+  ],
+  [
+    "Optional in automatic mode",
+    "Otomatik modda isteğe bağlı"
+  ],
+  [
+    "Possible successful login — verification required",
+    "Olası başarılı giriş — doğrulama gerekli",
+    "candidate"
+  ],
+  [
+    "No candidate identified",
+    "Olası başarılı giriş bulunamadı"
+  ],
+  [
+    "This is a response-comparison candidate, not accepted credentials. Verify the login manually.",
+    "Bu sonuç yanıt karşılaştırmasıyla bulunan bir adaydır; kabul edilen giriş bilgisi değildir. Girişi elle doğrulayın."
+  ],
+  [
+    "No success text is needed. Stable incorrect-password responses are compared with each attempt. A repeatable difference is only a candidate; verify the login manually.",
+    "Başarı metni gerekmez. Kararlı yanlış şifre yanıtları her denemeyle karşılaştırılır. Tekrarlanabilir fark yalnızca bir adaydır; girişi elle doğrulayın."
+  ],
+  [
+    "UTF-8 wordlists: up to 16 MB and 10000 unique entries per file. Stops at the first accepted pair or comparison candidate.",
+    "UTF-8 wordlist: dosya başına en fazla 16 MB ve 10000 benzersiz kayıt. İlk kabul edilen çiftte veya karşılaştırma adayında durur."
+  ],
+  [
+    "Explicit criteria use one baseline; automatic forms use three reference requests per username and additional comparison checks. Stops on acceptance, a candidate, rate limiting, lockout or ambiguity. Redirects are not followed.",
+    "Belirli ölçütlerde bir referans isteği; otomatik formda kullanıcı başına üç referans isteği ve ek karşılaştırma kontrolleri yapılır. Kabul, aday, hız sınırı, hesap kilidi veya belirsizlikte durur. Yönlendirmeler izlenmez."
+  ],
+  [
+    "See reference-matching attempts",
+    "Referansla eşleşen denemeleri göster"
+  ],
+  [
+    "Hide reference-matching attempts",
+    "Referansla eşleşen denemeleri gizle"
+  ],
+  [
+    "Choose automatic comparison or an explicit success criterion.",
+    "Otomatik karşılaştırma veya belirli bir başarı ölçütü seçin."
+  ],
+  [
+    "Optional failed login text must contain at least three characters.",
+    "İsteğe bağlı başarısız giriş metni en az üç karakter içermelidir."
+  ],
+  [
+    "Automatic comparison received an unexpected HTTP response; stopped.",
+    "Otomatik karşılaştırma beklenmeyen bir HTTP yanıtı aldı; durduruldu."
+  ],
+  [
+    "Automatic comparison received an invalid or external redirect; stopped.",
+    "Otomatik karşılaştırma geçersiz veya dış adrese yönlendirme aldı; durduruldu."
+  ],
+  [
+    "Automatic comparison received an empty response; stopped.",
+    "Otomatik karşılaştırma boş yanıt aldı; durduruldu."
+  ],
+  [
+    "The optional failure indicator did not match the reference responses. No further attempts were sent.",
+    "İsteğe bağlı başarısızlık işareti referans yanıtlarıyla eşleşmedi. Başka deneme gönderilmedi."
+  ],
+  [
+    "Reference responses were unstable. Use an explicit success criterion for this form.",
+    "Referans yanıtları kararsızdı. Bu form için belirli bir başarı ölçütü kullanın."
+  ],
+  [
+    "Response matched the incorrect-password reference; acceptance was not established.",
+    "Yanıt yanlış şifre referansıyla eşleşti; girişin kabul edildiği doğrulanmadı."
+  ],
+  [
+    "The changed response did not repeat consistently; stopped.",
+    "Değişen yanıt tutarlı biçimde tekrarlanmadı; durduruldu."
+  ],
+  [
+    "The incorrect-password control changed too; stopped without identifying a candidate.",
+    "Yanlış şifre kontrolü de değişti; aday belirlemeden durduruldu."
+  ],
+  [
+    "A repeatable response difference was found. Manual login verification is required; acceptance was not established.",
+    "Tekrarlanabilir yanıt farkı bulundu. Girişin elle doğrulanması gerekiyor; kabul edildiği doğrulanmadı."
+  ],
+  [
+    "No candidate was identified in the tested pairs. Matching the reference does not independently verify rejection.",
+    "Denenen çiftlerde aday bulunamadı. Referansla eşleşme, girişin reddedildiğini bağımsız olarak doğrulamaz."
+  ],
+  [
+    "Form response is being checked; acceptance was not established.",
+    "Form yanıtı kontrol ediliyor; girişin kabul edildiği doğrulanmadı."
+  ],
+  [
+    "comparison requests",
+    "karşılaştırma isteği"
+  ],
+  [
+    "Matches incorrect-password response",
+    "Yanıt yanlış şifre referansıyla eşleşiyor",
+    "baseline_match"
+  ],
+  [
+    "Credentials rejected",
+    "Giriş bilgileri reddedildi",
+    "rejected"
+  ],
+  [
+    "HTTP 404: Login URL was not found. Check the exact login endpoint.",
+    "HTTP 404: Giriş adresi bulunamadı. Tam giriş adresini kontrol edin."
+  ],
+  [
+    "HTTP 405: This URL does not accept POST. Check the form action URL.",
+    "HTTP 405: Bu adres POST kabul etmiyor. Formun action adresini kontrol edin."
+  ],
+  [
+    "HTTP 405: This URL does not accept GET. Check the HTTP Basic endpoint.",
+    "HTTP 405: Bu adres GET kabul etmiyor. HTTP Basic giriş adresini kontrol edin."
+  ],
+  [
+    "HTTP 400: The login request was rejected. Check field names and additional form values.",
+    "HTTP 400: Giriş isteği reddedildi. Alan adlarını ve ek form değerlerini kontrol edin."
+  ],
+  [
+    "HTTP 403: Access was denied. Check endpoint requirements; acceptance was not established.",
+    "HTTP 403: Erişim reddedildi. Giriş adresinin gereksinimlerini kontrol edin; girişin kabul edildiği doğrulanmadı."
+  ],
+  [
+    "HTTP 5xx: The server could not complete the login request. Check server health before retrying.",
+    "HTTP 5xx: Sunucu giriş isteğini tamamlayamadı. Yeniden denemeden önce sunucuyu kontrol edin."
+  ],
+  [
+    "TLS connection failed. Check the server certificate and HTTPS endpoint.",
+    "TLS bağlantısı kurulamadı. Sunucu sertifikasını ve HTTPS adresini kontrol edin."
+  ],
+  [
+    "The login request timed out. Check server availability and the request timeout.",
+    "Giriş isteği zaman aşımına uğradı. Sunucunun erişilebilirliğini ve istek zaman aşımı ayarını kontrol edin."
+  ],
+  [
+    "Could not connect to the login endpoint. Start the server and check the host and port.",
+    "Giriş adresine bağlanılamadı. Sunucuyu başlatın, host ve portu kontrol edin."
+  ],
+  [
+    "Enter the exact form action URL, including its path and query. The scan target alone may not accept login requests.",
+    "Yol ve sorgu parametreleri dahil formun tam action adresini girin. Tarama hedefi tek başına giriş isteklerini kabul etmeyebilir."
+  ],
+  [
+    "HTTP Basic uses the browser authentication challenge. For a page with username and password fields, choose Login form (POST).",
+    "HTTP Basic, tarayıcının kimlik doğrulama istemini kullanır. Kullanıcı adı ve şifre alanları olan bir sayfa için Giriş formu (POST) seçin."
+  ],
+  [
+    "Field names must match the HTML input name attributes. Add required fixed fields or the submit button as name=value pairs; they are not detected automatically.",
+    "Alan adları HTML input name değerleriyle eşleşmeli. Gerekli sabit alanları veya gönderme düğmesini name=value biçiminde ekleyin; otomatik algılanmazlar."
+  ],
+  [
+    "No wordlist pairs were tested. Check the result message and login settings before retrying.",
+    "Wordlist içindeki hiçbir çift denenmedi. Yeniden denemeden önce sonuç mesajını ve giriş ayarlarını kontrol edin."
+  ]
+]

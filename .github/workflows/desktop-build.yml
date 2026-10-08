@@ -1,0 +1,57 @@
+name: Desktop installers
+on:
+  workflow_dispatch:
+jobs:
+  package:
+    strategy:
+      matrix:
+        include:
+          - os: macos-14
+            target: mac
+          - os: ubuntu-22.04
+            target: linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: desktop/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Python backend dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r requirements.txt 'pyinstaller>=6.22,<7'
+      - name: Install desktop dependencies
+        working-directory: desktop
+        run: npm ci
+      - name: Build and verify
+        working-directory: desktop
+        run: |
+          npm run test:unit
+          npm run package:${{ matrix.target }}
+          build/backend/reconbot-backend/reconbot-backend -m reconbot --check-runtime
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Verify native application
+        working-directory: desktop
+        shell: bash
+        run: |
+          if [ "${{ matrix.target }}" = "linux" ]; then
+            sudo apt-get update -qq
+            sudo apt-get install -y xvfb libgbm1 libasound2
+            RECONBOT_SMOKE_EXECUTABLE="$PWD/dist/linux-unpacked/reconbot" xvfb-run -a node scripts/package-smoke.cjs
+          else
+            RECONBOT_SMOKE_EXECUTABLE="$(find "$PWD/dist" -path '*/Contents/MacOS/ReconBot' -type f -print -quit)" node scripts/package-smoke.cjs
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ReconBot-${{ matrix.target }}
+          path: |
+            desktop/dist/*.dmg
+            desktop/dist/*.zip
+            desktop/dist/*.AppImage
+            desktop/dist/*.deb

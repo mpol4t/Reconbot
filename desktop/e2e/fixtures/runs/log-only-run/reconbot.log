@@ -1,0 +1,2 @@
+2026-07-22 17:00:00 [+] Run initialized: target=https://log-only.example output=log-only-run
+2026-07-22 17:00:01 [i] Waiting for the first stage snapshot.

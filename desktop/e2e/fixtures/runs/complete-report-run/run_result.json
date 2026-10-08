@@ -1,0 +1,19 @@
+{
+  "run_state": "completed",
+  "meta": {
+    "target": "https://complete-a.example"
+  },
+  "traffic": {
+    "requested_profile": "balanced"
+  },
+  "summary": {
+    "katana_count": 8,
+    "checks_checked": 4,
+    "nuclei_findings_count": 1
+  },
+  "risk_score": 42,
+  "decision": {
+    "summary": "Complete filesystem fixture A.",
+    "first_action": "Review the artifact-backed finding."
+  }
+}

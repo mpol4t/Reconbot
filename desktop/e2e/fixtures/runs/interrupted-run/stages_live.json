@@ -1,0 +1,5 @@
+{
+  "katana": { "status": "done", "artifacts": { "urls": "katana.txt" } },
+  "checks": { "status": "running", "artifacts": {} },
+  "nuclei": { "status": "pending", "artifacts": {} }
+}

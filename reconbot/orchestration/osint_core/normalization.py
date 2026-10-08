@@ -1,0 +1,2 @@
+"""Target normalization extraction target."""
+

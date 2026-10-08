@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "target": "https://malformed-fallback.example"
+  },
+  "subfinder": { "status": "done", "artifacts": { "txt": "subdomains.txt" } },
+  "httpx": { "status": "running", "artifacts": {} }
+}

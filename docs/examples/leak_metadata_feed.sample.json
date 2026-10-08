@@ -1,0 +1,18 @@
+{
+  "source_name": "local_example_metadata_feed",
+  "generated_at": "2026-06-23T00:00:00Z",
+  "items": [
+    {
+      "title": "Example Corp public breach metadata reference",
+      "reference_url": "https://example.com/security/example-breach-report",
+      "published_at": "2026-05-01",
+      "breach_date": "2026-04-01",
+      "affected_accounts": 12345,
+      "data_classes": ["Email addresses", "Names"],
+      "matched_domains": ["example.com"],
+      "matched_brands": ["Example Corp"],
+      "snippet": "Metadata-only public report mention.",
+      "source_provider": "local_example_provider"
+    }
+  ]
+}

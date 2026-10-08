@@ -1,0 +1,5 @@
+FROM node:22-bookworm-slim
+RUN apt-get update -qq && apt-get install -y -qq python3 python3-venv libpython3.11 build-essential libgtk-3-0 libnss3 libasound2 xvfb && rm -rf /var/lib/apt/lists/*
+RUN python3 -m venv /tmp/backend-venv && /tmp/backend-venv/bin/pip install --no-cache-dir dnspython requests 'urllib3>=2.8,<3' PyYAML 'tldextract>=5.3,<6' 'pyinstaller>=6.22,<7'
+RUN apt-get update -qq -o Acquire::Retries=1 -o Acquire::http::Timeout=30 && apt-get install -y -qq libgbm1 && rm -rf /var/lib/apt/lists/*
+ENTRYPOINT ["sh", "/source/desktop/scripts/package-linux-container.sh"]

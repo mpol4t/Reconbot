@@ -1,0 +1,15 @@
+reconbot:
+  wordlist: "" # select a local wordlist in Configure
+  output_dir: "output"
+  verbose: true
+
+  report:
+    depth: balanced # summary | balanced | deep
+
+  traffic:
+    profile: fast   # safe | balanced | fast
+
+  screenshots:
+    enabled: true   # optional gowitness visual evidence; disabled by default
+    limit: 20        # capped already-live URLs only
+    timeout: 90      # bounded total screenshot stage timeout in seconds

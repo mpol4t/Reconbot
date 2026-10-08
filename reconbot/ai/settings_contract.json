@@ -1,0 +1,219 @@
+{
+  "contractVersion": 1,
+  "defaults": {
+    "enabled": true,
+    "provider": "openai_compatible",
+    "baseUrl": "http://127.0.0.1:1234/v1",
+    "model": "mistralai/mistral-7b-instruct-v0.3",
+    "selectedModel": "mistralai/mistral-7b-instruct-v0.3",
+    "manualModelName": "mistralai/mistral-7b-instruct-v0.3",
+    "apiKeyEnv": "",
+    "temperature": 0.2,
+    "timeout": 60,
+    "maxContextChars": 24000,
+    "maxOutputTokens": 2400,
+    "maxReasoningTokens": 0,
+    "disableReasoning": true,
+    "responseMode": "adaptive",
+    "autoBriefOnReportReady": false,
+    "allowSettingsRecommendations": true,
+    "allowApprovedSettingsChanges": true
+  },
+  "runtimeLimits": {
+    "unknownModelContextTokens": 4096,
+    "minimumAcceptedContextTokens": 2048,
+    "maximumAcceptedContextTokens": 2000000,
+    "safetyMarginFraction": 0.12,
+    "minimumSafetyMarginTokens": 512,
+    "charsPerTokenEstimate": 3,
+    "systemPromptTokenReserve": 420,
+    "compactSystemPromptTokenReserve": 320,
+    "maximumHistoryTurns": 10,
+    "maximumRendererMemoryTurns": 40,
+    "maximumRendererMemoryChars": 60000,
+    "maximumTransportCompatibilityAttempts": 4,
+    "maximumAnswerRepairAttempts": 1,
+    "runtimeCapabilityDiscoveryTimeoutSeconds": 5,
+    "processOverheadSeconds": 30,
+    "electronWatchdogOverheadSeconds": 30,
+    "hardMaximumOutputTokens": 32768
+  },
+  "actionSettings": {
+    "tool_settings.katana.maxDepth": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 100
+    },
+    "tool_settings.katana.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.katana.rateLimit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "tool_settings.katana.maxUrls": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100000
+    },
+    "tool_settings.gobuster.threads": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000
+    },
+    "tool_settings.gobuster.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.ffuf.rateLimit": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "tool_settings.ffuf.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.checks.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.screenshots.maxScreenshots": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "tool_settings.screenshots.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 86400
+    },
+    "tool_settings.nuclei.rateLimit": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "tool_settings.nuclei.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.nuclei.maxTemplates": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100000
+    },
+    "tool_settings.katana.enabled": {
+      "type": "boolean"
+    },
+    "tool_settings.gobuster.enabled": {
+      "type": "boolean"
+    },
+    "tool_settings.ffuf.enabled": {
+      "type": "boolean"
+    },
+    "tool_settings.checks.enabled": {
+      "type": "boolean"
+    },
+    "tool_settings.screenshots.enabled": {
+      "type": "boolean"
+    },
+    "tool_settings.nuclei.enabled": {
+      "type": "boolean"
+    },
+    "scan_profile": {
+      "type": "enum",
+      "values": [
+        "fast",
+        "balanced",
+        "slow",
+        "custom"
+      ]
+    },
+    "osint_profile": {
+      "type": "enum",
+      "values": [
+        "safe_mvp"
+      ]
+    },
+    "tool_settings.gobuster.wordlistProfile": {
+      "type": "enum",
+      "values": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "tool_settings.ffuf.wordlistProfile": {
+      "type": "enum",
+      "values": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "tool_settings.nuclei.templateProfile": {
+      "type": "enum",
+      "values": [
+        "safe",
+        "standard",
+        "broad"
+      ]
+    },
+    "tool_settings.nuclei.severityFilter": {
+      "type": "severity",
+      "values": [
+        "info",
+        "low",
+        "medium",
+        "high",
+        "critical",
+        "unknown"
+      ]
+    },
+    "tool_settings.osint.sources.githubCodeSearch.apiKeyEnv": {
+      "type": "env"
+    },
+    "tool_settings.ffuf.maxResults": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100000
+    },
+    "tool_settings.osint.maxSignals": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000
+    },
+    "tool_settings.osint.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.osint.sources.wayback.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.osint.sources.crtsh.timeout": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3600
+    },
+    "tool_settings.osint.sources.wayback.retryCount": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "tool_settings.osint.sources.crtsh.retryCount": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    }
+  }
+}

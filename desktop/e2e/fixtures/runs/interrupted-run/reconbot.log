@@ -1,0 +1,2 @@
+2026-07-22 14:30:00 [+] Run initialized: target=https://interrupted.example output=interrupted-run
+2026-07-22 14:30:05 [!] Scan interrupted by operator.

@@ -1,0 +1,21 @@
+{
+  "katana": {
+    "status": "done",
+    "artifacts": {
+      "urls": "katana.txt"
+    }
+  },
+  "checks": {
+    "status": "done",
+    "artifacts": {
+      "json": "checks.json"
+    }
+  },
+  "nuclei": {
+    "status": "done",
+    "findings_count": 1,
+    "artifacts": {
+      "jsonl": "nuclei_output.jsonl"
+    }
+  }
+}

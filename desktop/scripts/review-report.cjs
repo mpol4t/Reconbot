@@ -1,0 +1,41 @@
+const {_electron}=require('../node_modules/playwright'),fs=require('fs'),path=require('path'),assert=require('assert/strict');
+(async()=>{
+const root=path.resolve(__dirname,'..'),data=fs.mkdtempSync(path.join(root,'test-results/report-review-data-'));
+const app=await _electron.launch({args:[root],cwd:root,env:{...process.env,RECONBOT_E2E:'0',RECONBOT_REPO_ROOT:path.resolve(root,'..'),RECONBOT_E2E_USER_DATA_DIR:data,RECONBOT_PYTHON:path.resolve(root,'../.venv/bin/python')}});
+try {
+ const main=await app.firstWindow(); await main.locator('.nav-rail').waitFor();
+ const wait=app.waitForEvent('window');
+ await app.evaluate(({BrowserWindow},file)=>{ const w=new BrowserWindow({show:false,width:1440,height:1000,webPreferences:{nodeIntegration:false,contextIsolation:true}});void w.loadFile(file);},path.join(root,'test-results/report-review-run/report.html'));
+ const p=await wait, errors=[];p.on('pageerror',e=>errors.push(e.message));
+ await p.waitForLoadState('domcontentloaded'); console.log('Review URL',p.url());
+ await p.waitForFunction(()=>Boolean(window.__reconbotSetReportDepth));
+ assert.equal(await p.evaluate(()=>typeof cytoscape),'function');
+ await p.addStyleTag({content:'html { scroll-behavior:auto !important; }'});
+ console.log('Section heights',await p.locator('.report-main .section').evaluateAll(els=>els.map(el=>({id:el.id,height:Math.round(el.getBoundingClientRect().height)})).sort((a,b)=>b.height-a.height).slice(0,12)));
+ const folded=await p.locator('.report-section-disclosure:not([open])').count();assert(folded>5);
+ await p.screenshot({path:path.join(root,'test-results/report-review-balanced.png')});
+ await p.locator('.sidebar-nav a[href="#attack-graph"]').click();
+ console.log('Navigation',await p.evaluate(()=>({url:location.href,hash:location.hash,y:scrollY,height:document.body.scrollHeight,graph:document.getElementById('attack-graph').getBoundingClientRect().toJSON(),depth:document.body.className,parents:[...document.querySelectorAll('details')].filter(el=>el.contains(document.getElementById('attack-graph'))).map(el=>({open:el.open,summary:el.querySelector('summary').textContent.slice(0,100)}))})));
+ await p.waitForFunction(()=>Math.abs(document.getElementById('attack-graph').getBoundingClientRect().top)<150,{},{timeout:5000});
+ assert.equal(await p.locator('#attack-graph > details').getAttribute('open'),'');
+ assert(await p.locator('#attack-graph').evaluate(el=>Math.abs(el.getBoundingClientRect().top)<150));
+ await p.locator('[data-report-depth-button="deep"]').click();
+ assert.equal(await p.locator('.report-section-disclosure:not([open]), .report-evidence-disclosure:not([open])').count(),0);
+ const deepHeight=await p.evaluate(()=>document.body.scrollHeight);
+ await p.locator('[data-report-depth-button="balanced"]').click();
+ await p.locator('#osint-enrichment > details').evaluate(el=>el.open=false);
+ await p.locator('#osint-enrichment > details > summary').click();
+ assert.equal(await p.locator('#osint-enrichment > details').getAttribute('open'),'');
+ await p.locator('[data-report-depth-button="summary"]').click();
+ await p.waitForTimeout(200);
+ assert.equal(await p.locator('.report-section-disclosure[open], .report-evidence-disclosure[open]').count(),0);
+ assert(await p.evaluate(()=>document.body.scrollHeight)<deepHeight/2);
+ await p.screenshot({path:path.join(root,'test-results/report-review-summary.png')});
+ const visible=await p.locator('.report-main .section').evaluateAll(els=>els.filter(el=>getComputedStyle(el).display!=='none').length);
+ assert(visible<20);
+ assert.equal(await p.locator('script[src^="https:"]').count(),0);
+ assert.deepEqual(errors,[]);
+ console.log(JSON.stringify({foldedAuxiliarySections:folded,summaryVisibleSections:visible,offlineGraph:'passed',sidebarNavigation:'passed',depthSwitching:'passed',errors}));
+ fs.writeFileSync(path.join(root,'test-results/report-review.json'),JSON.stringify({folded,visible,errors},null,2));
+}finally{await app.close();}
+})().catch(e=>{console.error(e);process.exit(1)});

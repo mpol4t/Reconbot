@@ -1,0 +1,17 @@
+{
+  "run_state": "interrupted",
+  "meta": {
+    "target": "https://interrupted.example"
+  },
+  "traffic": {
+    "requested_profile": "balanced"
+  },
+  "summary": {
+    "katana_count": 5,
+    "checks_checked": 1,
+    "nuclei_findings_count": 0
+  },
+  "decision": {
+    "summary": "Run stopped before report generation."
+  }
+}

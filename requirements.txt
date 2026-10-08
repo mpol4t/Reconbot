@@ -1,0 +1,6 @@
+dnspython
+PySide6
+requests
+urllib3>=2.8,<3
+PyYAML
+tldextract>=5.3,<6

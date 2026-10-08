@@ -1,0 +1,14 @@
+{
+  "run_state": "completed",
+  "meta": {
+    "target": "https://complete-c.example"
+  },
+  "traffic": {
+    "requested_profile": "safe"
+  },
+  "summary": {
+    "checks_checked": 2,
+    "nuclei_findings_count": 0
+  },
+  "risk_score": 12
+}

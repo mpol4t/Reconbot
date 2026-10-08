@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "status": "done",
+    "artifacts": {
+      "json": "checks.json"
+    }
+  },
+  "nuclei": {
+    "status": "done",
+    "findings_count": 0,
+    "artifacts": {}
+  }
+}

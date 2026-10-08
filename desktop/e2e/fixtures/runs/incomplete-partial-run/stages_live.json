@@ -1,0 +1,28 @@
+{
+  "nmap": {
+    "status": "skipped",
+    "started_at": "2026-07-22T09:57:39+00:00",
+    "ended_at": "2026-07-22T09:57:39+00:00",
+    "artifacts": {
+      "txt": "nmap.txt"
+    },
+    "reason": "apex IP bulunamadı"
+  },
+  "subfinder": {
+    "status": "running",
+    "started_at": "2026-07-22T09:57:39+00:00",
+    "ended_at": null,
+    "artifacts": {}
+  },
+  "dnsx": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "httpx": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "katana": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "gobuster": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "ffuf": { "status": "skipped", "started_at": "2026-07-22T09:57:39+00:00", "ended_at": "2026-07-22T09:57:39+00:00", "artifacts": {} },
+  "historical_urls": { "status": "skipped", "started_at": "2026-07-22T09:57:39+00:00", "ended_at": "2026-07-22T09:57:39+00:00", "artifacts": {} },
+  "screenshots": { "status": "skipped", "started_at": "2026-07-22T09:57:39+00:00", "ended_at": "2026-07-22T09:57:39+00:00", "artifacts": {} },
+  "wafw00f": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "whatweb": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "checks": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} },
+  "nuclei": { "status": "pending", "started_at": null, "ended_at": null, "artifacts": {} }
+}

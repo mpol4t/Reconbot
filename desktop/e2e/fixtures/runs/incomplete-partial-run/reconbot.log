@@ -1,0 +1,5 @@
+2026-07-22 12:57:39 [+] Run initialized: target=kln output=incomplete-partial-run
+2026-07-22 12:57:39 [i] Traffic profile: fast | risk=high
+2026-07-22 12:57:39 [+] Target (Domain): kln
+2026-07-22 12:57:39 [+] Nmap atlandı (apex IP bulunamadı).
+2026-07-22 12:57:39 [+] Subfinder başlatılıyor... (rl=50)

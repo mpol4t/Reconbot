@@ -1,0 +1,4 @@
+{
+  "katana": { "status": "done", "artifacts": { "urls": "katana.txt" } },
+  "nuclei": { "status": "error", "findings_count": 3, "artifacts": {} }
+}

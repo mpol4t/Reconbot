@@ -1,0 +1,24 @@
+reconbot:
+  run_mode: osint_only
+  osint:
+    enabled: true
+    profile: safe_mvp
+    passiveOnly: true
+    includeCertificateTransparency: false
+    includeHistoricalUrls: false
+    includePublicCodeReferences: false
+    includeKnownBreachCatalog: true
+    includeSearchDorkSuggestions: false
+    includeInfrastructureIntelligence: false
+    includeOrganizationIntelligence: false
+    leakSources:
+      metadataFeed:
+        enabled: true
+        providerId: local_demo_feed
+        sourceName: local_test_metadata_feed
+        sourceType: local_file
+        feedPath: docs/examples/leak_metadata_feed.sample.json
+        feedUrl: ""
+        apiKeyEnv: ""
+        timeout: 10
+        maxResults: 25

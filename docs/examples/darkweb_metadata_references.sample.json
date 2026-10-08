@@ -1,0 +1,18 @@
+{
+  "source_name": "local_darkweb_metadata_demo",
+  "generated_at": "2026-07-02T00:00:00Z",
+  "items": [
+    {
+      "title": "Example Corp darkweb metadata mention",
+      "source_provider": "local_demo_provider",
+      "source_channel": "darkweb_metadata_index",
+      "reference_url": "https://example.com/security/example-darkweb-metadata",
+      "published_at": "2026-06-01",
+      "matched_domains": ["example.com"],
+      "matched_brands": ["Example Corp"],
+      "summary": "Metadata-only mention. No raw content.",
+      "data_classes": ["Email addresses"],
+      "confidence": "medium"
+    }
+  ]
+}

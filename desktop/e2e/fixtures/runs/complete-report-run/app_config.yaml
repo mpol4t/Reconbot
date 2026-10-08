@@ -1,0 +1,3 @@
+reconbot:
+  target: https://complete-a.example
+  traffic_profile: balanced

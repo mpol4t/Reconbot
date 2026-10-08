@@ -1,0 +1,5 @@
+reconbot:
+  output_dir: output
+  wordlist: ""
+  report:
+    depth: balanced

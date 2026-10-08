@@ -1,0 +1,35 @@
+{
+  "run_state": "interrupted",
+  "meta": {
+    "target": "http://localhost:8082"
+  },
+  "traffic": {
+    "requested_profile": "fast"
+  },
+  "risk_score": 90,
+  "summary": {
+    "nuclei_findings_count": 3
+  },
+  "nuclei": {
+    "findings": [
+      {
+        "title": "Fanwei e-cology RCE",
+        "template_id": "fanwei-rce",
+        "severity": "critical",
+        "matched-at": "http://localhost:8082/fanwei"
+      },
+      {
+        "title": "eYouMail Remote Code Execution",
+        "template_id": "eyoumail-rce",
+        "severity": "critical",
+        "matched-at": "http://localhost:8082/eyoumail"
+      },
+      {
+        "title": "Header disclosure",
+        "template_id": "header-info",
+        "severity": "high",
+        "matched-at": "http://localhost:8082/"
+      }
+    ]
+  }
+}

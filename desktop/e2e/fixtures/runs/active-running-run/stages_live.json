@@ -1,0 +1,8 @@
+{
+  "config": {
+    "target": "https://active-running.example"
+  },
+  "subfinder": { "status": "done", "artifacts": { "txt": "subdomains.txt" } },
+  "httpx": { "status": "running", "artifacts": {} },
+  "katana": { "status": "pending", "artifacts": {} }
+}

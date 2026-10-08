@@ -1,0 +1,2 @@
+2026-07-22 19:00:00 [+] Run initialized: target=https://report-failed.example output=report-failed-run
+2026-07-22 19:00:03 [!] Report generation failed: renderer exited before report.html was written.

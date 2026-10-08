@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+desktop/node_modules/
+desktop/out/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+.pytest_cache/
+.playwright-cli/
+desktop/test-results/
+build/
+dist/
+*.egg-info/
+output/
+reconbot/output/
+Reconbot-clean*.zip
+*.log
+
+# Local scanner resume state and one-off development patches
+resume.cfg
+reconbot-ai-settings-fix.patch
+
+# Synthetic Electron fixtures belong in source control.
+!desktop/e2e/fixtures/runs/*/reconbot.log
