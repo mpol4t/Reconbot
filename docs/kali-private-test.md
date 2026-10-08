@@ -8,21 +8,21 @@ The repository and release remain private during operator acceptance. Sign into 
 uname -m
 ```
 
-The current Linux installers support **x86_64/amd64 only**. An `aarch64`/`arm64` Kali VM needs a separately built ARM64 Linux package. Do not install the amd64 DEB on an ARM64 VM. The Mac Apple Silicon installer is a macOS application, not a Linux ARM64 package.
+Linux installers cover **x86_64/amd64** and **aarch64/arm64**. Choose `linux-amd64.deb` for `x86_64`, or `linux-arm64.deb` for `aarch64`/`arm64`. Do not mix architectures. The Mac Apple Silicon installer is a macOS application, not a Linux ARM64 package.
 
 ## 2. Download and install
 
-In the VM browser, sign into GitHub, open the private Reconbot repository's Releases page and download the Linux amd64 DEB and `SHA256SUMS.txt`. The source ZIP is available separately.
+In the VM browser, sign into GitHub, open the private Reconbot repository's Releases page and download the matching Linux DEB and `SHA256SUMS.txt`. The source ZIP is available separately.
 
-From the download folder:
+For your **aarch64 VM**, from the download folder (x86_64 users substitute `amd64`):
 
 ```bash
-sha256sum ReconBot-0.1.0-linux-amd64.deb
+sha256sum ReconBot-0.1.0-linux-arm64.deb
 # Compare the output with that filename's entry in SHA256SUMS.txt.
-sudo apt install ./ReconBot-0.1.0-linux-amd64.deb
+sudo apt install ./ReconBot-0.1.0-linux-arm64.deb
 ```
 
-Launch ReconBot from the application menu. If using the AppImage instead, make it executable and launch it as described in [getting started](getting-started.md). Kali installation is a pending operator check; prior Linux package checks used Debian 12/Xvfb.
+Launch ReconBot from the application menu. If using the AppImage instead, make it executable and launch it as described in [getting started](getting-started.md). Kali installation is a pending operator check; native Linux package checks used Debian 12 on x86_64 and ARM64 under Xvfb.
 
 The UI and Python backend are bundled. External scanners, SQLmap, lists, screenshot browser runtime and a local AI server are separate prerequisites. Enable only installed tools. Scanning and reporting must work with AI off.
 

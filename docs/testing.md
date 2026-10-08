@@ -5,13 +5,13 @@
 | Area | Evidence |
 | --- | --- |
 | Python | 533 tests and 69 subtests passed on the final local suite. |
-| Desktop | 43 unit tests; TypeScript and production builds passed. |
+| Desktop | 45 unit tests; TypeScript and production builds passed. |
 | Electron UI | Broad run: 49 passed, 2 optional live tests skipped, 1 Settings failure. The focus regression was fixed; all 12 Settings tests then passed. |
-| Native macOS / Linux | Packaged app, bundled backend, offline report, navigation, graph, SQL and authentication checks passed. Linux used Debian 12 x86_64/Xvfb. |
+| Native macOS / Linux | Packaged app, bundled backend, offline report, navigation, graph, SQL and authentication checks passed. Linux used Debian 12 x86_64/ARM64 under Xvfb. |
 | Real local tools | Four profiles with Katana/Gobuster/FFUF; four explicitly selected stock Nuclei templates; SQL positive/negative and nine authentication scenarios. 24 checks plus completion record. |
 | Local AI | Real natural conversations exposed wrong CVE identity and verification advice. Mistral/Qwen semantic acceptance failed. Qwen also exceeded the live harness wait in one run. |
 
-A startup-dependent stdout-timeout regression failed once under concurrent model/build load. Its test now allows two seconds for interpreter startup while the child still sleeps 60 seconds; output retention and process-registry assertions remain. All 42 related checks and the full suite then passed. An earlier Linux build smoke timeout was not reproduced by a stable sequential rebuild. These are local results; no GitHub CI result is claimed before the workflow runs.
+A startup-dependent stdout-timeout regression failed once under concurrent model/build load. Its test now allows two seconds for interpreter startup while the child still sleeps 60 seconds; output retention and process-registry assertions remain. All 42 related checks and the full suite then passed. An earlier Linux build smoke timeout was not reproduced by a stable sequential rebuild. The private GitHub source workflow also passed both Python and desktop jobs on commit `6215cd76b397e0dd7703ef63c669c05c0de870b9`; the first run exposed a host-dependent interpreter test and coarse filesystem clock collisions. Interpreter fixtures are isolated; cache signatures retain nanoseconds and expire after one second. Regression checks cover colliding versions.
 
 Native macOS packaging was tested on Apple Silicon. Packages are unsigned/not notarized. Physical Linux installation, other distributions and the operator's final touchpad/install workflow remain open checks. Scanner matches and automatic login candidates still require verification.
 

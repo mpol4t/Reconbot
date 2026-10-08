@@ -50,7 +50,13 @@ jobs:
             else
               sudo apt-get install -y libasound2
             fi
-            RECONBOT_SMOKE_EXECUTABLE="$PWD/dist/linux-unpacked/reconbot" xvfb-run -a node scripts/package-smoke.cjs
+            native_arch=$(node -p process.arch)
+            if [ "$native_arch" = "arm64" ]; then
+              native_app="$PWD/dist/linux-arm64-unpacked/reconbot"
+            else
+              native_app="$PWD/dist/linux-unpacked/reconbot"
+            fi
+            RECONBOT_SMOKE_EXECUTABLE="$native_app" xvfb-run -a node scripts/package-smoke.cjs
           else
             RECONBOT_SMOKE_EXECUTABLE="$(find "$PWD/dist" -path '*/Contents/MacOS/ReconBot' -type f -print -quit)" node scripts/package-smoke.cjs
           fi

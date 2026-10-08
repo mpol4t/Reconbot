@@ -41,10 +41,16 @@ if [ -n "$electron_archive" ]; then
 else
   ./node_modules/.bin/electron-builder --linux --publish never --config.directories.output=/package/dist --config.electronDownload.cache=/package/cache/electron
 fi
-RECONBOT_SMOKE_EXECUTABLE=/package/dist/linux-unpacked/reconbot xvfb-run -a node scripts/package-smoke.cjs
+native_arch=$(node -p process.arch)
+case "$native_arch" in
+  x64) native_executable=/package/dist/linux-unpacked/reconbot ;;
+  arm64) native_executable=/package/dist/linux-arm64-unpacked/reconbot ;;
+  *) echo "Unsupported native smoke architecture: $native_arch" >&2; exit 1 ;;
+esac
+RECONBOT_SMOKE_EXECUTABLE="$native_executable" xvfb-run -a node scripts/package-smoke.cjs
 cp test-results/native-smoke.json /package/native-smoke.json
-RECONBOT_SMOKE_EXECUTABLE=/package/dist/linux-unpacked/reconbot RECONBOT_GRAPH_SMOKE_RESULT=/package/native-graph-smoke.json xvfb-run -a node scripts/package-graph-smoke.cjs
+RECONBOT_SMOKE_EXECUTABLE="$native_executable" RECONBOT_GRAPH_SMOKE_RESULT=/package/native-graph-smoke.json xvfb-run -a node scripts/package-graph-smoke.cjs
 # Extracted AppImage can be smoke-tested even without a mounted FUSE device.
 
-RECONBOT_SMOKE_EXECUTABLE=/package/dist/linux-unpacked/reconbot RECONBOT_SQLMAP_SMOKE_RESULT=/package/native-sqlmap-smoke.json xvfb-run -a node scripts/package-sqlmap-smoke.cjs
-RECONBOT_SMOKE_EXECUTABLE=/package/dist/linux-unpacked/reconbot RECONBOT_AUTHENTICATION_SMOKE_RESULT=/package/native-authentication-smoke.json xvfb-run -a node scripts/package-authentication-smoke.cjs
+RECONBOT_SMOKE_EXECUTABLE="$native_executable" RECONBOT_SQLMAP_SMOKE_RESULT=/package/native-sqlmap-smoke.json xvfb-run -a node scripts/package-sqlmap-smoke.cjs
+RECONBOT_SMOKE_EXECUTABLE="$native_executable" RECONBOT_AUTHENTICATION_SMOKE_RESULT=/package/native-authentication-smoke.json xvfb-run -a node scripts/package-authentication-smoke.cjs

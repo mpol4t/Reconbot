@@ -29,7 +29,7 @@ npm run test:unit
 npm run test:e2e
 ```
 
-See [CONTRIBUTING](../CONTRIBUTING.md). Optional live-model and external-tool tests are separate. The manual installer workflow uploads build artifacts without publishing a release; remote CI is not claimed to have run before publication.
+See [CONTRIBUTING](../CONTRIBUTING.md). Optional live-model and external-tool tests are separate. The manual installer workflow uploads build artifacts without publishing a release; source CI checks run on private main; installer builds are triggered manually.
 
 ## Build installers
 
@@ -52,9 +52,11 @@ docker run --rm --platform linux/amd64 \
   reconbot-linux-builder:local
 ```
 
+For ARM64 Linux, substitute `linux/arm64`, image tag `reconbot-linux-builder:arm64` and output directory `desktop/build/linux-arm64`. The native architecture determines Electron, node-pty and the frozen backend. GitHub installer jobs cover macOS ARM64 and Linux x64/ARM64.
+
 Local Mac artifacts are in `desktop/dist/`; container Linux artifacts are in `desktop/build/linux/dist/`. Mac packages are unsigned/not notarized; Linux testing used Debian 12 under Xvfb.
 
-Native checks: `package-smoke.cjs`, `package-graph-smoke.cjs`, `package-sqlmap-smoke.cjs` and `package-authentication-smoke.cjs`. SQL checks need an installed SQLmap; authentication checks use owned loopback fixtures. These scripts isolate app state from the user's installed workspace.
+Native checks: `package-smoke.cjs`, `package-graph-smoke.cjs`, `package-sqlmap-smoke.cjs` and `package-authentication-smoke.cjs`. The packaged SQL smoke uses a deterministic CLI fixture for integration; real SQLmap positive/negative checks are recorded separately. Authentication checks use owned loopback fixtures. These scripts isolate app state from the user's installed workspace.
 
 ## Behavior
 

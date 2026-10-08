@@ -8,16 +8,29 @@ Get the package matching your platform from the [release](https://github.com/mpo
 
 Open the DMG and drag ReconBot into Applications. Quit an older instance before replacing it. Keep the application-support workspace to retain settings/history. The beta is unsigned and not notarized; macOS may require explicit permission to open it through System Settings → Privacy & Security. Do not disable system-wide security protections.
 
-### Linux x86_64
+### Linux x86_64 and ARM64
 
-Install the DEB using your distribution's package manager or run the AppImage:
+Run `uname -m` and select the matching package:
+
+| Output | DEB | AppImage |
+| --- | --- | --- |
+| `x86_64` | `ReconBot-0.1.0-linux-amd64.deb` | `ReconBot-0.1.0-linux-x86_64.AppImage` |
+| `aarch64` / `arm64` | `ReconBot-0.1.0-linux-arm64.deb` | `ReconBot-0.1.0-linux-arm64.AppImage` |
+
+On Debian/Ubuntu/Kali, install the matching DEB using the package manager. For an ARM64 VM:
 
 ```bash
-chmod +x ReconBot-0.1.0-linux-x86_64.AppImage
-./ReconBot-0.1.0-linux-x86_64.AppImage
+sudo apt install ./ReconBot-0.1.0-linux-arm64.deb
 ```
 
-AppImage may require FUSE. Where supported, `--appimage-extract-and-run` is an alternative. The Debian 12 container package checks do not establish compatibility with every distribution. Intel macOS and Windows are not packaged in this beta.
+Launch ReconBot from the application menu. For the AppImage, substitute your architecture's filename:
+
+```bash
+chmod +x ReconBot-0.1.0-linux-arm64.AppImage
+./ReconBot-0.1.0-linux-arm64.AppImage
+```
+
+AppImage may require FUSE. Where supported, `--appimage-extract-and-run` is an alternative. Native Debian 12 container checks cover both architectures under Xvfb; this does not establish compatibility with every distribution, older glibc releases or 32-bit Linux. Intel macOS and Windows are not packaged in this beta. A macOS ARM64 installer cannot run on Linux ARM64.
 
 ## External tools
 

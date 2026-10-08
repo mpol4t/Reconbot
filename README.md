@@ -4,7 +4,7 @@
 
 A desktop workspace for reconnaissance, evidence review and focused security validation. Built with Python, Electron, React and TypeScript.
 
-**Beta release · macOS Apple Silicon + Linux x86_64 · English / Türkçe UI**
+**Beta release · macOS Apple Silicon + Linux x86_64 / ARM64 · English / Türkçe UI**
 
 [Download beta](https://github.com/mpol4t/Reconbot/releases/tag/v0.1.0-beta.1) · [Getting started](docs/getting-started.md) · [Türkçe rehber](docs/first-use-tr.md) · [Test locally](docs/testing.md)
 
@@ -33,14 +33,15 @@ Download an asset from the [beta release](https://github.com/mpol4t/Reconbot/rel
 | Platform | Package |
 | --- | --- |
 | macOS Apple Silicon | `ReconBot-0.1.0-mac-arm64.dmg` or `.zip` |
-| Linux x86_64 | `ReconBot-0.1.0-linux-amd64.deb` or `.AppImage` |
+| Linux x86_64 | `ReconBot-0.1.0-linux-amd64.deb` or `ReconBot-0.1.0-linux-x86_64.AppImage` |
+| Linux ARM64 | `ReconBot-0.1.0-linux-arm64.deb` or `ReconBot-0.1.0-linux-arm64.AppImage` |
 
 The installers contain the desktop interface and Python backend. **End users do not need npm or a separate Python installation.**
 
 - **macOS:** open the DMG and drag ReconBot into Applications. Quit an older running version before replacing it; keep the application workspace to preserve history and settings.
 - **Linux:** install the DEB with your package manager or make the AppImage executable and launch it.
 
-macOS packages are unsigned and not notarized. Linux packages were tested in Debian 12 x86_64 under Xvfb; physical desktop installation and other distributions remain unverified. Intel macOS and Windows packages are not provided in this beta. See [installation and prerequisites](docs/getting-started.md).
+macOS packages are unsigned and not notarized. Linux packages were tested in Debian 12 on x86_64 and ARM64 under Xvfb; physical desktop installation and other distributions remain unverified. Intel macOS and Windows packages are not provided in this beta. See [installation and prerequisites](docs/getting-started.md).
 
 ## Start a scan
 
@@ -73,7 +74,7 @@ Messages, supplied context values and final provider answers are preserved witho
 Before this beta was prepared:
 
 - **533 Python tests and 69 subtests passed.**
-- **43 desktop unit tests passed;** TypeScript and production builds passed.
+- **45 desktop unit tests passed;** TypeScript and production builds passed.
 - Native macOS and Linux package checks covered application identity, the bundled backend, navigation, offline reports, graph interactions, SQL validation and authentication workflows.
 - Four local synthetic sites exercised discovery, selected Nuclei templates, SQL positive/negative cases and authentication controls.
 
@@ -81,7 +82,7 @@ These are recorded local checks, not a guarantee of universal correctness. Live-
 
 ## Private beta acceptance
 
-For the initial private GitHub release and Kali VM checks, follow [the Kali test guide](docs/kali-private-test.md). A signed-in authorized account is required to download private release assets. Linux packages currently support x86_64 only.
+For the initial private GitHub release and Kali VM checks, follow [the Kali test guide](docs/kali-private-test.md). A signed-in authorized account is required to download private release assets. Linux packages support x86_64 and ARM64; choose the package matching your architecture.
 
 ## Develop
 
